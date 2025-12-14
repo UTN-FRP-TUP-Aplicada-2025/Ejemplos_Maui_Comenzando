@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejemplo_Views.MainPage"
+              xmlns:models="clr-namespace:Ejemplo_Views">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+
+            <Label Text="Hello, World!"  />
+
+            <!--Ejemplo Entry-->
+            <Entry Placeholder="Enter text here" />
+
+            <Entry Keyboard="Date"/>
+            
+            <Entry Keyboard="Time"/>
+            
+            <Entry Keyboard="Password"/>
+            
+            <Entry Keyboard="Url"/>
+            <!--Fin del ejemplo-->
+
+            <!--Ejemplo de checkbox-->
+            <StackLayout>
+
+                <StackLayout>
+                <Label Text="Texto informativo" />
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="chkOpcion1" />
+                    <Label Text="Opción 1"  />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <CheckBox x:Name="chkOpcion2"/>
+                    <Label Text="Opción 2"  />
+                </HorizontalStackLayout>
+            </StackLayout>
+
+                <Label x:Name="lbResultadoCheckBox" Text=""  />
+
+                <Button Text="Ver Selección" Clicked="btnResultadoCheckBox_Clicked"/>
+            </StackLayout>
+            <!--Fin del ejemplo-->
+
+            <!--Ejemplo de radio button-->
+            <StackLayout>
+                <StackLayout>
+                <Label Text="Texto informativo" />
+                <RadioButton x:Name="rbtnOpcion1" Content="Opción 1" />
+
+                <RadioButton x:Name="rbtnOpcion2" Content="Opción 2" />
+            </StackLayout>
+
+                <Label x:Name="lbResultadoRadioButton" Text=""  />
+
+                <Button Text="Ver Selección" Clicked="btnResultadoRadioButton_Clicked"/>
+                <!--Fin del ejemplo-->
+
+                <RadioButton x:Name="rbtnOpcion3" Content="Opción 3" />
+            </StackLayout>
+
+            <!--Ejemplo listView-->
+            <StackLayout>
+                <CollectionView x:Name="lvLista" SelectionMode="Single" SelectedItem="{Binding selectedPersona}" SelectionChanged="lvLista_SelectionChanged">
+                    
+                    <CollectionView.HeaderTemplate>
+                        <DataTemplate x:DataType="x:String">
+                            <Label Text="{Binding .}"/>
+                        </DataTemplate>
+                    </CollectionView.HeaderTemplate>
+                    
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Persona">
+                            <Border Stroke="LightGray" StrokeThickness="1" Padding="10" Margin="5" InputTransparent="False">
+                                <StackLayout>
+                                    <Label Text="{Binding Id}"  FontAttributes="Bold"/>
+                                    <Label Text="{Binding Nombre}"  FontSize="16"/>
+                                </StackLayout>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                    <CollectionView.FooterTemplate>
+                        <DataTemplate x:DataType="x:String">
+                            <Label Text="{Binding .}"/>
+                        </DataTemplate>
+                    </CollectionView.FooterTemplate>
+
+                </CollectionView>
+
+                <HorizontalStackLayout>
+                    <Button Text="Ver lista" Clicked="btnVerLista_Clicked"/>
+                    <Button Text="Ver Selección" Clicked="btnVerSeleccion_Clicked"/>
+                </HorizontalStackLayout>
+            </StackLayout>
+            <!-- Fin ejemplo-->
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

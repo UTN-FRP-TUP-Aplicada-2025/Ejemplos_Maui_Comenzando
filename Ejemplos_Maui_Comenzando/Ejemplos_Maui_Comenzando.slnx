@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Ejemplo_HolaMundo/Ejemplo_HolaMundo.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="Ejemplo_Views/Ejemplo_Views.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+</Solution>
