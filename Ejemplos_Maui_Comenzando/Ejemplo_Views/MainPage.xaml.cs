@@ -15,7 +15,6 @@ public partial class MainPage : ContentPage
             await DisplayAlertAsync("CheckBox", $"IsChecked: {chk.IsChecked}", "OK");
         }
     }
-
     private void btnResultadoCheckBox_Clicked(object sender, EventArgs e)
     {
         if (chkOpcion1.IsChecked)
@@ -29,6 +28,11 @@ public partial class MainPage : ContentPage
 
         if (!chkOpcion1.IsChecked && !chkOpcion2.IsChecked)
             lbResultadoCheckBox.Text = "Ninguna opción seleccionada";
+    }
+
+    private void OnVerMensajeClicked(object sender, EventArgs e)
+    {
+        lbMensaje.Text = "Hola mundo";
     }
 
     private void btnResultadoRadioButton_Clicked(object sender, EventArgs e)
@@ -64,12 +68,14 @@ public partial class MainPage : ContentPage
           await DisplayAlertAsync("CollectionView", $"selectedItem: {seleccionado.Nombre}", "OK");
     }
 
-    private void lvLista_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    async void btnVerSeleccionPicker_Clicked(object sender, EventArgs e)
     {
-        var valor=e.CurrentSelection.FirstOrDefault();
+        Persona seleccionado = pkrPersonas.SelectedItem as Persona;
+        if (seleccionado != null)
+            await DisplayAlertAsync("CollectionView", $"selectedItem: {seleccionado.Nombre}", "OK");
     }
 
-    Persona selectedPersona { get; set; }
+    
 }
 
 public class Persona

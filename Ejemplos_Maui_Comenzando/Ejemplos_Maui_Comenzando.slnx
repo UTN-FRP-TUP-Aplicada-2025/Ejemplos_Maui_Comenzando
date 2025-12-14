@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Navegacion/">
+    <Project Path="Ejemplo_RutasGlobales/Ejemplo_RutasGlobales.csproj" />
+  </Folder>
   <Project Path="Ejemplo_HolaMundo/Ejemplo_HolaMundo.csproj">
     <Deploy Solution="Debug|*" />
   </Project>

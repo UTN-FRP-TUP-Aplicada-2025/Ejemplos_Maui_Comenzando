@@ -2,25 +2,38 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ejemplo_Views.MainPage"
-              xmlns:models="clr-namespace:Ejemplo_Views">
+             xmlns:local="clr-namespace:Ejemplo_Views">
 
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
 
-            <Label Text="Hello, World!"  />
+            <!--Ejemplo Label-->
+            <StackLayout>
+                <Label Text="Hello, World!"  />
+            </StackLayout>
+            <!--Fin Ejemplo-->
 
+            <!--Ejemplo Button-->
+            <StackLayout>
+                <Label x:Name="lbMensaje" Text=""  />
+                <Button Text="Ver Mensaje" Clicked="OnVerMensajeClicked"/>
+            </StackLayout>
+            <!--Fin Ejemplo-->
+            
             <!--Ejemplo Entry-->
-            <Entry Placeholder="Enter text here" />
+            <StackLayout>
+                <Entry Placeholder="Enter text here" />
 
-            <Entry Keyboard="Date"/>
+                <Entry Keyboard="Date"/>
             
-            <Entry Keyboard="Time"/>
+                <Entry Keyboard="Time"/>
             
-            <Entry Keyboard="Password"/>
+                <Entry Keyboard="Password"/>
             
-            <Entry Keyboard="Url"/>
-            <!--Fin del ejemplo-->
-
+                <Entry Keyboard="Url"/>
+            </StackLayout>
+            <!--Fin Ejemplo-->
+            
             <!--Ejemplo de checkbox-->
             <StackLayout>
 
@@ -61,18 +74,18 @@
 
             <!--Ejemplo listView-->
             <StackLayout>
-                <CollectionView x:Name="lvLista" SelectionMode="Single" SelectedItem="{Binding selectedPersona}" SelectionChanged="lvLista_SelectionChanged">
+                <CollectionView x:Name="lvLista" SelectionMode="Single">
                     
                     <CollectionView.HeaderTemplate>
                         <DataTemplate x:DataType="x:String">
                             <Label Text="{Binding .}"/>
                         </DataTemplate>
                     </CollectionView.HeaderTemplate>
-                    
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate x:DataType="models:Persona">
-                            <Border Stroke="LightGray" StrokeThickness="1" Padding="10" Margin="5" InputTransparent="False">
-                                <StackLayout>
+
+                    <CollectionView.ItemTemplate InputTransparent="True">
+                        <DataTemplate x:DataType="local:Persona" >
+                            <Border Stroke="LightGray" StrokeThickness="1" Padding="10" Margin="5" InputTransparent="True" >
+                                <StackLayout InputTransparent="True">
                                     <Label Text="{Binding Id}"  FontAttributes="Bold"/>
                                     <Label Text="{Binding Nombre}"  FontSize="16"/>
                                 </StackLayout>
@@ -94,6 +107,29 @@
                 </HorizontalStackLayout>
             </StackLayout>
             <!-- Fin ejemplo-->
+
+            <!--Ejemplo Label-->
+            <StackLayout>
+                <Picker x:Name="pkrPersonas" Title="Seleccione una opcion" ItemDisplayBinding="{Binding Nombre}">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type local:Persona}">
+                            <local:Persona Id="1" Nombre="Rocio"/>
+                            <local:Persona Id="2" Nombre="Eduardo"/>
+                            <local:Persona Id="3" Nombre="Griselda"/>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label x:Name="lbVerSeleccionPicker" Text=""  />
+                <Button Text="Ver Selección" Clicked="btnVerSeleccionPicker_Clicked"/>
+            </StackLayout>
+            <!--Fin Ejemplo-->
+
+            <!--Ejemplo Label-->
+            <StackLayout>
+                <Image Source="la_ratona_en_aplicada.png" Aspect="Fill"/>
+            </StackLayout>
+            <!--Fin Ejemplo-->
+
 
         </VerticalStackLayout>
     </ScrollView>

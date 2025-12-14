@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejemplo_RutasGlobales.Pages.MainPage"
+             xmlns:models="clr-namespace:Ejemplo_RutasGlobales.Models">
+
+    <ScrollView>
+        <VerticalStackLayout >
+            <Picker x:Name="pkrPersonas" Title="Personas" ItemDisplayBinding="{Binding Nombre}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type models:Persona}">
+                        <models:Persona Id="1" Nombre="Griselda" Edad="24"/>
+                        <models:Persona Id="2" Nombre="Eduardo" Edad="25"/>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text=""/>
+
+            <Button x:Name="btnVerDetalleSeleccion"  Clicked="btnVerDetalleSeleccion_Clicked" Text="Ver"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
