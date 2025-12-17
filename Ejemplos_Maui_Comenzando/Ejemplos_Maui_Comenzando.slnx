@@ -1,11 +1,31 @@
 <Solution>
-  <Folder Name="/Navegacion/">
-    <Project Path="Ejemplo_RutasGlobales/Ejemplo_RutasGlobales.csproj" />
+  <Folder Name="/Binding/">
+    <Project Path="Ejemplo_BasicDataBinding/Ejemplo_BasicDataBinding.csproj" Id="8a323236-8d75-4198-bf41-5a9c7d66abfc">
+      <Deploy Solution="Debug|*" />
+    </Project>
+    <Project Path="Ejemplo_ConBinding/Ejemplo_ConBinding.csproj" Id="0aede578-d75a-4ae5-9394-b7492d876d16">
+      <Deploy Solution="Debug|*" />
+    </Project>
+    <Project Path="Ejemplo_DirectionalBinding/Ejemplo_DirectionalBinding.csproj" Id="c7f2e1f5-7009-45cf-a1ab-2d7dc76760cd">
+      <Deploy Solution="Debug|*" />
+    </Project>
+    <Project Path="Ejemplo_SinBinding/Ejemplo_SinBinding.csproj" Id="23a6b679-3fbd-413e-a89e-a108de4031c1">
+      <Deploy Solution="Debug|*" />
+    </Project>
   </Folder>
-  <Project Path="Ejemplo_HolaMundo/Ejemplo_HolaMundo.csproj">
-    <Deploy Solution="Debug|*" />
-  </Project>
-  <Project Path="Ejemplo_Views/Ejemplo_Views.csproj">
-    <Deploy Solution="Debug|*" />
-  </Project>
+  <Folder Name="/Comenzando/">
+    <Project Path="Ejemplo_HolaMundo/Ejemplo_HolaMundo.csproj">
+      <Deploy Solution="Debug|*" />
+    </Project>
+  </Folder>
+  <Folder Name="/Navegacion/">
+    <Project Path="Ejemplo_RutasGlobales/Ejemplo_RutasGlobales.csproj">
+      <Deploy Solution="Debug|*" />
+    </Project>
+  </Folder>
+  <Folder Name="/Views/">
+    <Project Path="Ejemplo_Views/Ejemplo_Views.csproj">
+      <Deploy Solution="Debug|*" />
+    </Project>
+  </Folder>
 </Solution>

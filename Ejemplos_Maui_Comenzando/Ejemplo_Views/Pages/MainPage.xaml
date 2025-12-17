@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Ejemplo_Views.MainPage"
-             xmlns:local="clr-namespace:Ejemplo_Views">
+             x:Class="Ejemplo_Views.Pages.MainPage"
+             xmlns:local="clr-namespace:Ejemplo_Views"
+             xmlns:pages="clr-namespace:Ejemplo_Views.Pages"
+             xmlns:models="clr-namespace:Ejemplo_Views.Models">
 
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
@@ -83,7 +85,7 @@
                     </CollectionView.HeaderTemplate>
 
                     <CollectionView.ItemTemplate InputTransparent="True">
-                        <DataTemplate x:DataType="local:Persona" >
+                        <DataTemplate x:DataType="models:Persona" >
                             <Border Stroke="LightGray" StrokeThickness="1" Padding="10" Margin="5" InputTransparent="True" >
                                 <StackLayout InputTransparent="True">
                                     <Label Text="{Binding Id}"  FontAttributes="Bold"/>
@@ -112,10 +114,10 @@
             <StackLayout>
                 <Picker x:Name="pkrPersonas" Title="Seleccione una opcion" ItemDisplayBinding="{Binding Nombre}">
                     <Picker.ItemsSource>
-                        <x:Array Type="{x:Type local:Persona}">
-                            <local:Persona Id="1" Nombre="Rocio"/>
-                            <local:Persona Id="2" Nombre="Eduardo"/>
-                            <local:Persona Id="3" Nombre="Griselda"/>
+                        <x:Array Type="{x:Type models:Persona}">
+                            <models:Persona Id="1" Nombre="Rocio"/>
+                            <models:Persona Id="2" Nombre="Eduardo"/>
+                            <models:Persona Id="3" Nombre="Griselda"/>
                         </x:Array>
                     </Picker.ItemsSource>
                 </Picker>

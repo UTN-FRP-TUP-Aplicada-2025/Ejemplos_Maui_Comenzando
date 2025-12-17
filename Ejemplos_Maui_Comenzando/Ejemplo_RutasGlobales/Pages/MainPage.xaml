@@ -6,16 +6,18 @@
 
     <ScrollView>
         <VerticalStackLayout >
-            <Picker x:Name="pkrPersonas" Title="Personas" ItemDisplayBinding="{Binding Nombre}">
-                <Picker.ItemsSource>
+            <Picker x:Name="pkrPersonas" Title="Personas" 
+                    SelectedItem="{Binding SelectedPersona}" ItemDisplayBinding="{Binding Nombre}"
+                    ItemsSource="{Binding Personas}">
+                <!--<Picker.ItemsSource>
                     <x:Array Type="{x:Type models:Persona}">
                         <models:Persona Id="1" Nombre="Griselda" Edad="24"/>
                         <models:Persona Id="2" Nombre="Eduardo" Edad="25"/>
                     </x:Array>
-                </Picker.ItemsSource>
+                </Picker.ItemsSource>-->
             </Picker>
 
-            <Label Text=""/>
+            <Label Text="{Binding SelectedPersona.Estado}"/>
 
             <Button x:Name="btnVerDetalleSeleccion"  Clicked="btnVerDetalleSeleccion_Clicked" Text="Ver"/>
         </VerticalStackLayout>

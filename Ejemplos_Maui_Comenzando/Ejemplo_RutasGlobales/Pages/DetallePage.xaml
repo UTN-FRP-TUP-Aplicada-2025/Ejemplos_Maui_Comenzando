@@ -4,9 +4,21 @@
              x:Class="Ejemplo_RutasGlobales.Pages.DetallePage"
              Title="DetallePage">
     <VerticalStackLayout>
-        <Label Text="{Binding Detalle.Id}"/>
-        <Label Text="{Binding Detalle.Nombre}"/>
+        <HorizontalStackLayout>
+            <Label Text="{Binding Detalle.Id}"/>
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <Label Text="Nombre"/>
+            <Entry Text="{Binding Detalle.Nombre}" Keyboard="Text"/>
+        </HorizontalStackLayout>
+        
         <Label Text="{Binding Detalle.Edad}"/>
+        
+        <HorizontalStackLayout>
+            <CheckBox IsChecked="{Binding Detalle.EsActivo}}"/>
+            <Label Text="Está activo"/>
+        </HorizontalStackLayout>
 
         <Button x:Name="btnVolver"  Clicked="btnVolver_Clicked" Text="Volver"/>
     </VerticalStackLayout>

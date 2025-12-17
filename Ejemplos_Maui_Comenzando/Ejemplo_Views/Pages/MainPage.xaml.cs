@@ -1,4 +1,6 @@
-﻿namespace Ejemplo_Views;
+﻿using Ejemplo_Views.Models;
+
+namespace Ejemplo_Views.Pages;
 
 public partial class MainPage : ContentPage
 {
@@ -78,8 +80,3 @@ public partial class MainPage : ContentPage
     
 }
 
-public class Persona
-{
-    public int Id { get; set; }
-    public string Nombre { get; set; }
-}

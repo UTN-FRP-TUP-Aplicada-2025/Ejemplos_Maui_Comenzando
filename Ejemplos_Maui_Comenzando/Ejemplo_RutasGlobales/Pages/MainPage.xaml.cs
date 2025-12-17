@@ -7,13 +7,42 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
+        BindingContext = this;
+
+        Personas = new List<Persona>()
+        {
+            new Persona{ Id=1, Nombre="Griseld", Edad=24},
+            new Persona{ Id=2, Nombre="Eduardo", Edad=25},
+        };
     }
+
+    List<Persona> personas=new();
+    public List<Persona> Personas
+    {
+        get => personas;
+        set
+        {
+            personas = value;
+            OnPropertyChanged();
+        }
+    }
+
+    Persona selectedPersona;
+    public Persona SelectedPersona
+    {
+        get => selectedPersona;
+        set
+        {
+            selectedPersona = value;
+            OnPropertyChanged();
+        }
+    }
+
 
     async void btnVerDetalleSeleccion_Clicked(object sender, EventArgs e)
     {
 
-        Persona selected = pkrPersonas.SelectedItem as Persona;
-        if (selected == null)
+        if (selectedPersona == null)
         {
             await DisplayAlertAsync("Error", "Selecciona una persona", "OK");
             return;
@@ -21,7 +50,7 @@ public partial class MainPage : ContentPage
 
         var navigationParameter = new ShellNavigationQueryParameters
         {
-            { "detalle", selected }
+            { "detalle", selectedPersona }
         };
         await Shell.Current.GoToAsync("DetallePage", navigationParameter);
 
