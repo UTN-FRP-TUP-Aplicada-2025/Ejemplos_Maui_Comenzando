@@ -24,9 +24,11 @@
     </Project>
   </Folder>
   <Folder Name="/Navegacion/">
+    <Project Path="Ejemplo_Flyout/Ejemplo_Flyout.csproj" Id="c066ed90-c741-4f6d-bdc2-d087dc01ff61" />
     <Project Path="Ejemplo_RutasGlobales/Ejemplo_RutasGlobales.csproj">
       <Deploy Solution="Debug|*" />
     </Project>
+    <Project Path="Ejemplo_Tabbed/Ejemplo_Tabbed.csproj" Id="d35e04b6-7573-4698-9a99-aeafde02b359" />
   </Folder>
   <Folder Name="/Views/">
     <Project Path="Ejemplo_Views/Ejemplo_Views.csproj">
