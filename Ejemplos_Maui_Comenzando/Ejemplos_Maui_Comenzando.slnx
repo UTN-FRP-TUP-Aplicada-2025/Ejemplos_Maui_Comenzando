@@ -18,6 +18,11 @@
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
+  <Folder Name="/Layout/">
+    <Project Path="Ejemplo_Layout/Ejemplo_Layout.csproj" Id="11d5e223-8c7f-48bb-976d-4f81500a73fc">
+      <Deploy Solution="Debug|*" />
+    </Project>
+  </Folder>
   <Folder Name="/Navegacion/">
     <Project Path="Ejemplo_RutasGlobales/Ejemplo_RutasGlobales.csproj">
       <Deploy Solution="Debug|*" />
