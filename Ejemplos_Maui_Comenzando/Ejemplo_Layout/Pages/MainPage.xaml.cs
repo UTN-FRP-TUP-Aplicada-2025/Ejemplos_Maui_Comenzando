@@ -7,4 +7,24 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
     }
+
+    private void OnVerticalStackLayoutButtonClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(VerticalStackLayoutPage));
+    }
+
+    private void OnHorizontalStackLayoutButtonClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(HorizontalStackLayoutPage));
+    }
+
+    private void OnGridButtonClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(GridPage));
+    }
+
+    private void OnFlexLayoutButtonClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(FlexLayoutPage));
+    }
 }

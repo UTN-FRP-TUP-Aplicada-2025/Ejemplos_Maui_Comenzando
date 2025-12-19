@@ -1,10 +1,17 @@
-﻿namespace Ejemplo_Layout
+﻿using Ejemplo_Layout.Pages;
+
+namespace Ejemplo_Layout;
+
+public partial class AppShell : Shell
 {
-    public partial class AppShell : Shell
+    public AppShell()
     {
-        public AppShell()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+
+        Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
+        Routing.RegisterRoute(nameof(HorizontalStackLayoutPage), typeof(HorizontalStackLayoutPage));
+        Routing.RegisterRoute(nameof(VerticalStackLayoutPage), typeof(VerticalStackLayoutPage));
+        Routing.RegisterRoute(nameof(GridPage), typeof(GridPage));
+        Routing.RegisterRoute(nameof(FlexLayoutPage), typeof(FlexLayoutPage));
     }
 }

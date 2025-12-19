@@ -4,23 +4,12 @@
              x:Class="Ejemplo_Layout.Pages.MainPage">
 
     <ScrollView>
-        <StackLayout Margin="20">
-            <Label Text="Primary colors" />
-            <BoxView Color="Red"
-                 HeightRequest="40" />
-            <BoxView Color="Yellow"
-                 HeightRequest="40" />
-            <BoxView Color="Blue"
-                 HeightRequest="40" />
-            <Label Text="Secondary colors" />
-            <BoxView Color="Green"
-                 HeightRequest="40" />
-            <BoxView Color="Orange"
-                 HeightRequest="40" />
-            <BoxView Color="Purple"
-                 HeightRequest="40" />
+        <StackLayout >
+            <Button Text="Vertical Stack Layout" FontSize="20" Clicked="OnVerticalStackLayoutButtonClicked" Margin="10"/>
+            <Button Text="Horizontal Stack Layout" FontSize="20" Clicked="OnHorizontalStackLayoutButtonClicked" Margin="10"/>
+            <Button Text="Grid Layout" FontSize="20" Clicked="OnGridButtonClicked" Margin="10"/>
+            <Button Text="Flex Layout" FontSize="20" Clicked="OnFlexLayoutButtonClicked" Margin="10"/>
         </StackLayout>
-
     </ScrollView>
 
 </ContentPage>
