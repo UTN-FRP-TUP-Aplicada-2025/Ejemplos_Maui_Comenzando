@@ -27,4 +27,10 @@ public partial class MainPage : ContentPage
     {
         Shell.Current.GoToAsync(nameof(FlexLayoutPage));
     }
+
+    private void OnAbsoluteLayoutButtonClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(AbsoluteLayoutPage));
+    }
+    
 }

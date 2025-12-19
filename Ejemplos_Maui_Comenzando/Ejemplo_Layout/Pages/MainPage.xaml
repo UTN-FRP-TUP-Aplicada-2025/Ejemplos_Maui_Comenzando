@@ -9,6 +9,7 @@
             <Button Text="Horizontal Stack Layout" FontSize="20" Clicked="OnHorizontalStackLayoutButtonClicked" Margin="10"/>
             <Button Text="Grid Layout" FontSize="20" Clicked="OnGridButtonClicked" Margin="10"/>
             <Button Text="Flex Layout" FontSize="20" Clicked="OnFlexLayoutButtonClicked" Margin="10"/>
+            <Button Text="Absolute Layout" FontSize="20" Clicked="OnAbsoluteLayoutButtonClicked" Margin="10"/>
         </StackLayout>
     </ScrollView>
 
