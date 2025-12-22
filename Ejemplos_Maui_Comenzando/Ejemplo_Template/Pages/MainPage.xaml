@@ -5,6 +5,9 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
+
+            <Button Text="Login" Clicked="Button_Clicked" />
+            
         </VerticalStackLayout>
     </ScrollView>
 
