@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejemplo_MiILogger.Pages.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout  Padding="30,0" Spacing="25">
+
+            <ScrollView HeightRequest="300">
+                <Label Text="{Binding Path=Logcat}" />
+            </ScrollView>
+
+            <Button x:Name="BtnEscribirFileLog" Text="Escribir File Log"  SemanticProperties.Hint="Ver File Log" Clicked="OnEscribirFileLogClicked" HorizontalOptions="Fill" />
+            <Button x:Name="BtnVerFileLog" Text="Ver File Log"  SemanticProperties.Hint="Ver File Log" Clicked="OnVerFileLogClicked" HorizontalOptions="Fill" />
+            <Button x:Name="BtnClearFileLog" Text="Ver File Log"  SemanticProperties.Hint="Clear File Log" Clicked="OnClearFileLogClicked" HorizontalOptions="Fill" />
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

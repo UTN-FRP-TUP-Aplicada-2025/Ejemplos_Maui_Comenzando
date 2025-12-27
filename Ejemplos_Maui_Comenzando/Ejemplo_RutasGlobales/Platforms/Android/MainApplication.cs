@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace Ejemplo_RutasGlobales
+namespace Ejemplo_RutasGlobales;
 {
     [Application]
     public class MainApplication : MauiApplication

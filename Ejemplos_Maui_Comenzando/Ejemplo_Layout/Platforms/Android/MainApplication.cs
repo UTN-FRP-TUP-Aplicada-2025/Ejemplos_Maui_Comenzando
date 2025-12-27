@@ -1,8 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace Ejemplo_Layout
-{
+namespace Ejemplo_Layout;
     [Application]
     public class MainApplication : MauiApplication
     {

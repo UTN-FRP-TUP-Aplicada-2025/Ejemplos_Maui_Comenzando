@@ -1,10 +1,9 @@
 ﻿using Foundation;
 
-namespace Ejemplo_Template
+namespace Ejemplo_Template;
+
+[Register("AppDelegate")]
+public class AppDelegate : MauiUIApplicationDelegate
 {
-    [Register("AppDelegate")]
-    public class AppDelegate : MauiUIApplicationDelegate
-    {
-        protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
-    }
+    protected override MauiApp CreateMauiApp() => MauiProgram.CreateMauiApp();
 }

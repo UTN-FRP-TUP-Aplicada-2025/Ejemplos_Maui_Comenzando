@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejemplo_Logcat.Pages.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout  Padding="30,0" Spacing="25">
+
+            <ScrollView HeightRequest="300">
+                <Label Text="{Binding Path=Logcat}" />
+            </ScrollView>
+
+             <Button x:Name="BtnVerLogCat" Text="Ver cat LOG"  SemanticProperties.Hint="Ver catlog" Clicked="OnVerCatlogClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

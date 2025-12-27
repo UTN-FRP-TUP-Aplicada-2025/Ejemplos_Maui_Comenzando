@@ -1,4 +1,19 @@
 <Solution>
+  <Folder Name="/AnatomiaProyecto/">
+    <Project Path="Ejemplo_CicloDeVida/Ejemplo_CicloDeVida.csproj" Id="6b77b1e0-b433-41ee-b2bb-cf5d4c09ea46">
+      <Deploy Solution="Debug|*" />
+    </Project>
+    <Project Path="Ejemplo_ILogger/Ejemplo_ILogger.csproj" Id="bd3a24a4-42e2-4aac-aa15-876268ba2739">
+      <Deploy Solution="Debug|*" />
+    </Project>
+    <Project Path="Ejemplo_Logcat/Ejemplo_Logcat.csproj" Id="c678d1fe-54cd-40df-bae2-4a7b855a3de6">
+      <Deploy Solution="Debug|*" />
+    </Project>
+    <Project Path="Ejemplo_MiILogger/Ejemplo_MiILogger.csproj" Id="3e0102d1-8023-4fc2-91e0-cd8591ee13ed">
+      <Deploy Solution="Debug|*" />
+    </Project>
+    <Project Path="Ejemplo_StaticLog/Ejemplo_StaticLog.csproj" Id="4fa3ddf3-c4ad-4477-a643-696c5b0a8a1c" />
+  </Folder>
   <Folder Name="/Binding/">
     <Project Path="Ejemplo_BasicDataBinding/Ejemplo_BasicDataBinding.csproj" Id="8a323236-8d75-4198-bf41-5a9c7d66abfc">
       <Deploy Solution="Debug|*" />
@@ -20,6 +35,11 @@
   </Folder>
   <Folder Name="/Designing/">
     <Project Path="Ejemplo_Template/Ejemplo_Template.csproj" Id="ccf396c4-aa53-40b7-b264-3a2152f70192">
+      <Deploy Solution="Debug|*" />
+    </Project>
+  </Folder>
+  <Folder Name="/Inyeccion/">
+    <Project Path="Ejemplo_Inyeccion/Ejemplo_Inyeccion.csproj" Id="ca0f2877-81b2-4b0f-9764-be9dc3ec9b80">
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>

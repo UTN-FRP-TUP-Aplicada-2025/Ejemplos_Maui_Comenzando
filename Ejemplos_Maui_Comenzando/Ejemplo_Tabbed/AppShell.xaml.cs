@@ -1,10 +1,9 @@
-﻿namespace Ejemplo_Tabbed
+﻿namespace Ejemplo_Tabbed;
+
+public partial class AppShell : Shell
 {
-    public partial class AppShell : Shell
+    public AppShell()
     {
-        public AppShell()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
 }
