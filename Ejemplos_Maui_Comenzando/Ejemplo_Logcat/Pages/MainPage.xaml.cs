@@ -18,20 +18,20 @@ public partial class MainPage : ContentPage
         }
     }
 
-    LoggerAndroid _loggerAndroid;
+    SOLogger _soLogger;
 
-    public MainPage(LoggerAndroid loggerAndroid)
+    public MainPage(SOLogger SOlogger)
     {
         InitializeComponent();
         BindingContext = this;
-        _loggerAndroid = loggerAndroid;
+        _soLogger = SOlogger;
     }
 
     private void OnVerCatlogClicked(object? sender, EventArgs e)
     {
         try
         { 
-            Logcat = _loggerAndroid.GetLoggerInfo(); 
+            Logcat = _soLogger.GetLoggerInfo(); 
         }
         catch (Exception ex)
         {

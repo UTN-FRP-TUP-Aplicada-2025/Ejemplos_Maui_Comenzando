@@ -20,8 +20,7 @@ public static class MauiProgram
         //     builder.Logging.AddDebug();
         //#endif
 
-        builder.Services.AddSingleton<LoggerAndroid>();
-        builder.Services.AddSingleton<App>();
+        builder.Services.AddSingleton<SOLogger>();
 
         return builder.Build();
     }

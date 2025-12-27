@@ -1,7 +1,7 @@
 ﻿
 namespace Ejemplo_Logcat.Services;
 
-public class LoggerAndroid
+public class SOLogger
 {
     public string GetLoggerInfo()
     {

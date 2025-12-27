@@ -1,20 +1,13 @@
-﻿using Ejemplo_CicloDeVida.Services;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-
-namespace Ejemplo_CicloDeVida;
+﻿namespace Ejemplo_CicloDeVida;
 
 //maneja el ciclo de vida de la aplicación
 //inicia la ventana principal
 public partial class App : Application
 {
-    LoggerAndroid _loggerAndroid;
 
-    public App(LoggerAndroid loggerAndroid)
+    public App()
     {
         InitializeComponent();
-
-        _loggerAndroid=loggerAndroid;
     }
 
     protected override Window CreateWindow(IActivationState? activationState)
@@ -80,6 +73,7 @@ public partial class App : Application
     private async void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
     {
         //Captura excepciones no manejadas del dominio de la app.
+        
 
     }
 
