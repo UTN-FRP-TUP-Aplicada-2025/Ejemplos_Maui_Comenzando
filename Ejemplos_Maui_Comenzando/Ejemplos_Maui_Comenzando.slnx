@@ -14,6 +14,12 @@
     </Project>
     <Project Path="Ejemplo_StaticLog/Ejemplo_StaticLog.csproj" Id="4fa3ddf3-c4ad-4477-a643-696c5b0a8a1c" />
   </Folder>
+  <Folder Name="/Apis/">
+    <Project Path="Ejemplo_ApiClient/Ejemplo_ApiClient.csproj" Id="6ac5b8a3-f5a2-49d7-99ce-85713e548667">
+      <Deploy Solution="Debug|*" />
+    </Project>
+    <Project Path="Ejemplo_ApiServer/Ejemplo_ApiServer.csproj" Id="5184170c-e964-4130-a519-0f5ad029268f" />
+  </Folder>
   <Folder Name="/Binding/">
     <Project Path="Ejemplo_BasicDataBinding/Ejemplo_BasicDataBinding.csproj" Id="8a323236-8d75-4198-bf41-5a9c7d66abfc">
       <Deploy Solution="Debug|*" />
@@ -37,6 +43,10 @@
     <Project Path="Ejemplo_Template/Ejemplo_Template.csproj" Id="ccf396c4-aa53-40b7-b264-3a2152f70192">
       <Deploy Solution="Debug|*" />
     </Project>
+  </Folder>
+  <Folder Name="/Hibridas/">
+    <Project Path="Ejemplo_WebView/Ejemplo_WebView.csproj" Id="4fc8ba12-ef6c-4cfd-9f49-f9a3470ff579" />
+    <Project Path="Ejemplo_ws_Blazor/Ejemplo_ws_Blazor.csproj" Id="fcd02ad7-aaf5-4480-8962-8e9901340ca8" />
   </Folder>
   <Folder Name="/Inyeccion/">
     <Project Path="Ejemplo_Inyeccion/Ejemplo_Inyeccion.csproj" Id="ca0f2877-81b2-4b0f-9764-be9dc3ec9b80">
