@@ -33,7 +33,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<ILogReaderService>(new LogReaderService(rutaLogs));
 
         // registor de la página (necesario para inyectar servicios)
-        builder.Services.AddTransient<MainPage>();
+        //builder.Services.AddTransient<MainPage>();
 
         return builder.Build();
     }
