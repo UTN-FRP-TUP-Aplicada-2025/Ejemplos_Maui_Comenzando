@@ -28,7 +28,7 @@ public static class MauiProgram
 
         //El Log del Contenedor (Inyección de Dependencias)
         builder.Services.AddLogging();
-        builder.Services.AddSingleton<MainPage>();
+        //builder.Services.AddSingleton<MainPage>();
 
         return builder.Build();
     }

@@ -2,6 +2,7 @@
 
 public partial class MainPage : ContentPage
 {
+    
     public string Nombre { get; set; }
     public int Edad { get; set; }
 

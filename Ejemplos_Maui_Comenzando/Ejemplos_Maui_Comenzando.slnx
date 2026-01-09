@@ -1,73 +1,90 @@
 <Solution>
   <Folder Name="/AnatomiaProyecto/">
     <Project Path="Ejemplo_CicloDeVida/Ejemplo_CicloDeVida.csproj" Id="6b77b1e0-b433-41ee-b2bb-cf5d4c09ea46">
-      <Deploy Solution="Debug|*" />
+      <Deploy />
+    </Project>
+    <Project Path="Ejemplo_Fuente/Ejemplo_Fuente.csproj" Id="5aa241de-7b7a-4890-a742-ad622da6657a">
+      <Deploy Solution="Release|*" />
     </Project>
     <Project Path="Ejemplo_ILogger/Ejemplo_ILogger.csproj" Id="bd3a24a4-42e2-4aac-aa15-876268ba2739">
-      <Deploy Solution="Debug|*" />
+      <Deploy />
     </Project>
     <Project Path="Ejemplo_Logcat/Ejemplo_Logcat.csproj" Id="c678d1fe-54cd-40df-bae2-4a7b855a3de6">
-      <Deploy Solution="Debug|*" />
+      <Deploy />
     </Project>
     <Project Path="Ejemplo_MiILogger/Ejemplo_MiILogger.csproj" Id="3e0102d1-8023-4fc2-91e0-cd8591ee13ed">
-      <Deploy Solution="Debug|*" />
+      <Deploy />
     </Project>
-    <Project Path="Ejemplo_StaticLog/Ejemplo_StaticLog.csproj" Id="4fa3ddf3-c4ad-4477-a643-696c5b0a8a1c" />
+    <Project Path="Ejemplo_StaticLog/Ejemplo_StaticLog.csproj" Id="4fa3ddf3-c4ad-4477-a643-696c5b0a8a1c">
+      <Deploy />
+    </Project>
   </Folder>
   <Folder Name="/Apis/">
     <Project Path="Ejemplo_ApiClient/Ejemplo_ApiClient.csproj" Id="6ac5b8a3-f5a2-49d7-99ce-85713e548667">
-      <Deploy Solution="Debug|*" />
+      <Deploy />
     </Project>
     <Project Path="Ejemplo_ApiServer/Ejemplo_ApiServer.csproj" Id="5184170c-e964-4130-a519-0f5ad029268f" />
   </Folder>
   <Folder Name="/Binding/">
     <Project Path="Ejemplo_BasicDataBinding/Ejemplo_BasicDataBinding.csproj" Id="8a323236-8d75-4198-bf41-5a9c7d66abfc">
-      <Deploy Solution="Debug|*" />
+      <Deploy />
     </Project>
     <Project Path="Ejemplo_ConBinding/Ejemplo_ConBinding.csproj" Id="0aede578-d75a-4ae5-9394-b7492d876d16">
-      <Deploy Solution="Debug|*" />
+      <Deploy />
     </Project>
     <Project Path="Ejemplo_DirectionalBinding/Ejemplo_DirectionalBinding.csproj" Id="c7f2e1f5-7009-45cf-a1ab-2d7dc76760cd">
-      <Deploy Solution="Debug|*" />
+      <Deploy />
     </Project>
     <Project Path="Ejemplo_SinBinding/Ejemplo_SinBinding.csproj" Id="23a6b679-3fbd-413e-a89e-a108de4031c1">
-      <Deploy Solution="Debug|*" />
+      <Deploy />
     </Project>
   </Folder>
   <Folder Name="/Comenzando/">
+    <Project Path="Ejemplo_DirectivaPreprocesador/Ejemplo_DirectivaPreprocesador.csproj" Id="9ca8c8a4-6a11-4a0c-a5f4-7c96653cd302">
+      <Deploy Solution="Debug|*" />
+    </Project>
     <Project Path="Ejemplo_HolaMundo/Ejemplo_HolaMundo.csproj">
+      <Deploy />
+    </Project>
+    <Project Path="Ejemplo_ClaseParcial/Ejemplo_ClaseParcial.csproj" Id="f60fb776-7325-4a89-bff9-237dc8c52c1c">
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
   <Folder Name="/Designing/">
     <Project Path="Ejemplo_Template/Ejemplo_Template.csproj" Id="ccf396c4-aa53-40b7-b264-3a2152f70192">
-      <Deploy Solution="Debug|*" />
+      <Deploy />
     </Project>
   </Folder>
   <Folder Name="/Hibridas/">
-    <Project Path="Ejemplo_WebView/Ejemplo_WebView.csproj" Id="4fc8ba12-ef6c-4cfd-9f49-f9a3470ff579" />
+    <Project Path="Ejemplo_WebView/Ejemplo_WebView.csproj" Id="4fc8ba12-ef6c-4cfd-9f49-f9a3470ff579">
+      <Deploy />
+    </Project>
     <Project Path="Ejemplo_ws_Blazor/Ejemplo_ws_Blazor.csproj" Id="fcd02ad7-aaf5-4480-8962-8e9901340ca8" />
   </Folder>
   <Folder Name="/Inyeccion/">
     <Project Path="Ejemplo_Inyeccion/Ejemplo_Inyeccion.csproj" Id="ca0f2877-81b2-4b0f-9764-be9dc3ec9b80">
-      <Deploy Solution="Debug|*" />
+      <Deploy />
     </Project>
   </Folder>
   <Folder Name="/Layout/">
     <Project Path="Ejemplo_Layout/Ejemplo_Layout.csproj" Id="11d5e223-8c7f-48bb-976d-4f81500a73fc">
-      <Deploy Solution="Debug|*" />
+      <Deploy />
     </Project>
   </Folder>
   <Folder Name="/Navegacion/">
-    <Project Path="Ejemplo_Flyout/Ejemplo_Flyout.csproj" Id="c066ed90-c741-4f6d-bdc2-d087dc01ff61" />
-    <Project Path="Ejemplo_RutasGlobales/Ejemplo_RutasGlobales.csproj">
-      <Deploy Solution="Debug|*" />
+    <Project Path="Ejemplo_Flyout/Ejemplo_Flyout.csproj" Id="c066ed90-c741-4f6d-bdc2-d087dc01ff61">
+      <Deploy Solution="Release|*" />
     </Project>
-    <Project Path="Ejemplo_Tabbed/Ejemplo_Tabbed.csproj" Id="d35e04b6-7573-4698-9a99-aeafde02b359" />
+    <Project Path="Ejemplo_RutasGlobales/Ejemplo_RutasGlobales.csproj">
+      <Deploy />
+    </Project>
+    <Project Path="Ejemplo_Tabbed/Ejemplo_Tabbed.csproj" Id="d35e04b6-7573-4698-9a99-aeafde02b359">
+      <Deploy Solution="Release|*" />
+    </Project>
   </Folder>
   <Folder Name="/Views/">
     <Project Path="Ejemplo_Views/Ejemplo_Views.csproj">
-      <Deploy Solution="Debug|*" />
+      <Deploy />
     </Project>
   </Folder>
 </Solution>

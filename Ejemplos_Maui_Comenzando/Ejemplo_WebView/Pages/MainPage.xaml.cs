@@ -1,4 +1,6 @@
-﻿namespace Ejemplo_WebView.Pages;
+﻿using System;
+
+namespace Ejemplo_WebView.Pages;
 
 public partial class MainPage : ContentPage
 {
@@ -8,9 +10,34 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
 
-        webView.Source = "https://hxbt1xfz-7102.brs.devtunnels.ms/";//"https://hxbt1xfz-7257.brs.devtunnels.ms/";
+        //webView.Source = "https://hxbt1xfz-7102.brs.devtunnels.ms/";//"https://hxbt1xfz-7257.brs.devtunnels.ms/";
+        webView.Source = "https://geometriafernando.somee.com/";
 
-        //webView.Source ="https://www.google.com";
+//var request = new HttpRequestMessage(HttpMethod.Get, "https://hxbt1xfz-7102.brs.devtunnels.ms/");
+
+//request.Headers.Add("X-Tunnel-Skip-AntiPhishing-Page", "true");
+
+//webView.Source = new UrlWebViewSource
+//{
+//    Url = "https://hxbt1xfz-7102.brs.devtunnels.ms/"
+//};
+
+//var webViewSource = new UrlWebViewSource
+//{
+//    Url = "https://hxbt1xfz-7102.brs.devtunnels.ms/"
+//};
+
+//#if ANDROID
+//    var nativeWebView = webView.Handler?.PlatformView as Android.Webkit.WebView;
+//    if (nativeWebView != null)
+//    {
+//        Dictionary<string, string> headers = new Dictionary<string, string>
+//        {
+//            { "X-Tunnel-Skip-AntiPhishing-Page", "true" }
+//        };
+//        nativeWebView.LoadUrl("https://geometriafernando.somee.com/", headers);
+//    }
+//# endif
     }
 
     private void WebView_Navigating(object sender, WebNavigatingEventArgs e)
