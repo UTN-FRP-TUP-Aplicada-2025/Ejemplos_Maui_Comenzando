@@ -43,6 +43,7 @@
     <Project Path="Ejemplo_DirectivaPreprocesador/Ejemplo_DirectivaPreprocesador.csproj" Id="9ca8c8a4-6a11-4a0c-a5f4-7c96653cd302">
       <Deploy Solution="Debug|*" />
     </Project>
+    <Project Path="Ejemplo_FicheroProyecto/Ejemplo_FicheroProyecto.csproj" Id="235deccf-0823-4f59-8dc6-7bd9d65011d3" />
     <Project Path="Ejemplo_HolaMundo/Ejemplo_HolaMundo.csproj">
       <Deploy />
     </Project>

@@ -1,5 +1,4 @@
-﻿
-namespace Ejemplo_DirectivaPreprocesador;
+﻿namespace Ejemplo_DirectivaPreprocesador;
 
 public partial class MiClase
 {
@@ -11,9 +10,11 @@ public partial class MiClase
     public string SaludarPlataforma()
     {
 #if ANDROID
-        return "Hola Android";
-#elif windows
-        return "Hola Windows";
+        return "Hola Android!";
+#elif WINDOWS
+        return "Hola Windows!";
+#else
+        return "Hola Plataforma desconocida!";
 #endif
     }
 }
