@@ -9,10 +9,7 @@ public partial class AppShell : Shell
         InitializeComponent();
 
         Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
-        Routing.RegisterRoute(nameof(HorizontalStackLayoutPage), typeof(HorizontalStackLayoutPage));
-        Routing.RegisterRoute(nameof(VerticalStackLayoutPage), typeof(VerticalStackLayoutPage));
-        Routing.RegisterRoute(nameof(GridPage), typeof(GridPage));
-        Routing.RegisterRoute(nameof(FlexLayoutPage), typeof(FlexLayoutPage));
-        Routing.RegisterRoute(nameof(AbsoluteLayoutPage), typeof(AbsoluteLayoutPage));
+        Routing.RegisterRoute(nameof(GridLayoutPage), typeof(GridLayoutPage));
+        Routing.RegisterRoute(nameof(StackLayoutPage), typeof(StackLayoutPage));
     }
 }

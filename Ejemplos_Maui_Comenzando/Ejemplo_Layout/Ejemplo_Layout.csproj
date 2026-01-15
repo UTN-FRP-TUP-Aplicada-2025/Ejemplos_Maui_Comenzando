@@ -47,30 +47,27 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Pages\HorizontalStackLayoutPage.xaml.cs">
-	    <DependentUpon>HorizontalStackLayoutPage.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Update="Pages\VerticalStackLayoutPage.xaml.cs">
-	    <DependentUpon>VerticalStackLayoutPage.xaml</DependentUpon>
-	  </Compile>
+	  <MauiXaml Update="Pages\GridLayoutPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\MainPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\StackLayoutPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Pages\AbsoluteLayoutPage.xaml">
+	  <None Update="Pages\GridLayoutPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Pages\FlexLayoutPage.xaml">
+	  </None>
+	  <None Update="Pages\MainPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Pages\GridPage.xaml">
+	  </None>
+	  <None Update="Pages\StackLayoutPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Pages\HorizontalStackLayoutPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Pages\VerticalStackLayoutPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+	  </None>
 	</ItemGroup>
 
 </Project>
