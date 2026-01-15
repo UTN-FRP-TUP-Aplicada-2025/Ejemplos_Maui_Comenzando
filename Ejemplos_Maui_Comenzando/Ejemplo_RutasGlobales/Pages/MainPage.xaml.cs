@@ -13,6 +13,9 @@ public partial class MainPage : ContentPage
         {
             new Persona{ Id=1, Nombre="Griseld", Edad=24},
             new Persona{ Id=2, Nombre="Eduardo", Edad=25},
+            new Persona{ Id=3, Nombre="Ana", Edad=30},
+            new Persona{ Id=4, Nombre="Luis", Edad=28},
+            new Persona{ Id=5, Nombre="Mariana", Edad=22},
         };
     }
 
@@ -52,7 +55,7 @@ public partial class MainPage : ContentPage
         {
             { "detalle", selectedPersona }
         };
-        await Shell.Current.GoToAsync("DetallePage", navigationParameter);
+        await Shell.Current.GoToAsync(nameof(DetallePage), navigationParameter);
 
     }
 

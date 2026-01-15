@@ -29,6 +29,7 @@
     <Project Path="Ejemplo_BasicDataBinding/Ejemplo_BasicDataBinding.csproj" Id="8a323236-8d75-4198-bf41-5a9c7d66abfc">
       <Deploy />
     </Project>
+    <Project Path="Ejemplo_BindingSimple/Ejemplo_BindingSimple.csproj" Id="4dde6c5e-ac32-44e7-8f69-d2ba187cae7d" />
     <Project Path="Ejemplo_ConBinding/Ejemplo_ConBinding.csproj" Id="0aede578-d75a-4ae5-9394-b7492d876d16">
       <Deploy />
     </Project>
