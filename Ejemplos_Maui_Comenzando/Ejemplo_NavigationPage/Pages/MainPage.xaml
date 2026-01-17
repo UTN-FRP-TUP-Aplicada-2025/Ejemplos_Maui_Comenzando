@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejemplo_NavigationPage.Pages.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+
+            <Label Text="Hola mundo" />
+
+            <Button Text="Next" Clicked="OnNextClicked"/>
+
+            <Button Text="Mostrar Modal" Clicked="OnMostrarModalClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

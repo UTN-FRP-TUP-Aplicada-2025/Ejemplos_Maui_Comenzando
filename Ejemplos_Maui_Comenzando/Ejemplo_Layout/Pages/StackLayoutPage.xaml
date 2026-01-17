@@ -13,7 +13,7 @@
                  HorizontalOptions="End"/>
     </StackLayout>
 
-    <!--<Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="*" 
+    <!--<Grid RowDefinitions="Auto,Auto,Auto" ColumnDefinitions="*,*" 
           ColumnSpacing="10" RowSpacing="10">
 
         <BoxView Grid.Row="0" BackgroundColor="#ADCBFF" HeightRequest="100" WidthRequest="100"

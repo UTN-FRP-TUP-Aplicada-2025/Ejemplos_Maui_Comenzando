@@ -73,7 +73,13 @@
       <Deploy />
     </Project>
   </Folder>
-  <Folder Name="/Navegacion/">
+  <Folder Name="/Navegacion/" />
+  <Folder Name="/Navegacion/NavigationPage_Jerarquica_modal/">
+    <Project Path="Ejemplo_NavigationPage/Ejemplo_NavigationPage.csproj" Id="11d00b6d-d342-4714-a619-6d7cf49d4d84">
+      <Deploy Solution="Debug|*" />
+    </Project>
+  </Folder>
+  <Folder Name="/Navegacion/Shell_multinivel/">
     <Project Path="Ejemplo_Flyout/Ejemplo_Flyout.csproj" Id="c066ed90-c741-4f6d-bdc2-d087dc01ff61">
       <Deploy Solution="Release|*" />
     </Project>
