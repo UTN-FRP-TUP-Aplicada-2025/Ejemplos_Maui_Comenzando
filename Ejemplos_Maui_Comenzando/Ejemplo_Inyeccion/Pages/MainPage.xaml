@@ -4,7 +4,10 @@
              x:Class="Ejemplo_Inyeccion.Pages.MainPage">
 
     <ScrollView>
-        <Label Text="Hola mundo!"/>
+        <Label x:Name="lbFechayHora" Text="-"/>
+
+        <Button Text="Consultar fecha y hora" Clicked="OnConsultarFechaYHoraClicked"/>
+
     </ScrollView>
 
 </ContentPage>

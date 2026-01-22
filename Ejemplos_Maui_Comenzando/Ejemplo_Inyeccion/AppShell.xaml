@@ -7,9 +7,7 @@
     xmlns:pages="clr-namespace:Ejemplo_Inyeccion.Pages"
     Title="Ejemplo_Inyeccion">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate pages:MainPage}"
+    <ShellContent Title="Home" ContentTemplate="{DataTemplate pages:MainPage}"
         Route="MainPage" />
 
 </Shell>

@@ -1,4 +1,5 @@
 ﻿using Ejemplo_Inyeccion.Pages;
+using Ejemplo_Inyeccion.Services;
 using Microsoft.Extensions.Logging;
 
 namespace Ejemplo_Inyeccion;
@@ -29,6 +30,8 @@ public static class MauiProgram
         //El Log del Contenedor (Inyección de Dependencias)
         builder.Services.AddLogging();
         //builder.Services.AddSingleton<MainPage>();
+
+        builder.Services.AddSingleton<StatusService>();
 
         return builder.Build();
     }
