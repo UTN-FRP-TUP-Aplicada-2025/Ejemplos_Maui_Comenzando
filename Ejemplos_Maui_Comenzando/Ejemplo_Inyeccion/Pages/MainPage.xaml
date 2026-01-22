@@ -4,10 +4,17 @@
              x:Class="Ejemplo_Inyeccion.Pages.MainPage">
 
     <ScrollView>
-        <Label x:Name="lbFechayHora" Text="-"/>
 
-        <Button Text="Consultar fecha y hora" Clicked="OnConsultarFechaYHoraClicked"/>
-
+        <StackLayout Spacing="10" Margin="10">
+            
+            <!--invoca un metodo de un servicio inyectado y muestra el resultado-->
+            
+            <Label x:Name="LbFechayHora" Text="-"/>
+            
+            <Button Text="Consultar fecha y hora" Clicked="OnConsultarFechaYHoraClicked"/>
+            
+        </StackLayout>
+        
     </ScrollView>
 
 </ContentPage>

@@ -1,5 +1,6 @@
 ﻿using Ejemplo_Inyeccion.Services;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics;
 
 namespace Ejemplo_Inyeccion.Pages;
 
@@ -12,21 +13,29 @@ public partial class MainPage : ContentPage
     public MainPage(ILogger<MainPage> logger, StatusService service)
     {
         InitializeComponent();
+        
         //inyección
         _logger = logger;
 
-        _logger.LogInformation("¡La página MainPage ha sido creada!");
-
         //inyección
         _service = service;
+
+        //invocación
+        _logger.LogInformation("¡La página MainPage ha sido creada!");
     }
 
-    private void OnConsultarFechaHoraClicked(object sender, EventArgs e)
+    private void OnConsultarFechaYHoraClicked(object sender, EventArgs e)
     {
-        lbFechayHora.Text = $"{ _service.GetDate():dd/MM/yyyy,HH:MM}";
+        try
+        {
+            DateTime fecha = _service.GetDate();//invocación
+            LbFechayHora.Text = $"{fecha:dd/MM/yyyy,HH:mm}";
 
-        _logger.LogInformation("¡La página MainPage ha sido creada!");
-
-
+            _logger.LogInformation("¡La página MainPage ha sido creada!");
+        }
+        catch (Exception ex)
+        {
+            Debug.WriteLine(ex);
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace Ejemplo_SDK_Versiones;
+namespace Ejemplo_InyeccionYCicloVida;
 
 public static class MauiProgram
 {

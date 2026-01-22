@@ -33,6 +33,9 @@ public static class MauiProgram
 
         builder.Services.AddSingleton<StatusService>();
 
+        //
+        //builder.Services.AddTransient<MainPage>();
+
         return builder.Build();
     }
 }

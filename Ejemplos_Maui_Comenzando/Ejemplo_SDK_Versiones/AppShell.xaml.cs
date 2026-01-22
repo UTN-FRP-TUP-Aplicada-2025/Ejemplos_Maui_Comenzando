@@ -1,10 +1,14 @@
-﻿namespace Ejemplo_SDK_Versiones
+﻿using Ejemplo_SDK_Versiones.Pages;
+
+namespace Ejemplo_SDK_Versiones;
+
+public partial class AppShell : Shell
 {
-    public partial class AppShell : Shell
+    public AppShell()
     {
-        public AppShell()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+
+        Routing.RegisterRoute(nameof(InfoPage), typeof(InfoPage));
+        Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
     }
 }
