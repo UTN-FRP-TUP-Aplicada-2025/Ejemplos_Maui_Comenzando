@@ -58,18 +58,4 @@ public partial class MainPage : ContentPage
         await Shell.Current.GoToAsync(nameof(DetallePage), navigationParameter);
 
     }
-
-    async void btnVerDetalleAsyncSeleccion_Clicked(object sender, EventArgs e)
-    {
-        var pageParams = new ShellNavigationQueryParameters
-        {
-            { "detalle",  new TaskCompletionSource<string>() }
-        };
-
-        await Shell.Current.GoToAsync(nameof(DetalleAsyncPage), pageParams);
-
-        string detalle = await (pageParams["detalle"] as TaskCompletionSource<string>).Task;        
-        await DisplayAlertAsync("Escaneo completado", $"detalle", "OK");
-    }
-
 }
