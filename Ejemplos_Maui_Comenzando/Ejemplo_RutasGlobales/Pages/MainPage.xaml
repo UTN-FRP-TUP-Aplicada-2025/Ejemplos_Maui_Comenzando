@@ -19,7 +19,10 @@
 
             <Label Text="{Binding SelectedPersona.Estado}"/>
 
-            <Button x:Name="btnVerDetalleSeleccion"  Clicked="btnVerDetalleSeleccion_Clicked" Text="Ver"/>
+            <Button Clicked="btnVerDetalleSeleccion_Clicked" Text="Ver"/>
+
+            <Button Clicked="btnVerDetalleAsyncSeleccion_Clicked" Text="Ver (async)"/>
+            
         </VerticalStackLayout>
     </ScrollView>
 

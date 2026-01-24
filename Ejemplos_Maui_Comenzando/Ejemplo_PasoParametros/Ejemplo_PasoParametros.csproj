@@ -1,17 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net10.0-android;net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks>net10.0-android</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net10.0-windows10.0.19041.0</TargetFrameworks>
 
 		<OutputType>Exe</OutputType>
-		<RootNamespace>Ejemplo_Layout</RootNamespace>
+		<RootNamespace>Ejemplo_PasoParametros</RootNamespace>
 		<UseMaui>true</UseMaui>
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
-		<ApplicationTitle>Ejemplo_Layout</ApplicationTitle>
+		<ApplicationTitle>Ejemplo_PasoParametros</ApplicationTitle>
 
 		<ApplicationId>com.ejemplos.comenzando</ApplicationId>
 
@@ -20,11 +20,16 @@
 
 		<WindowsPackageType>None</WindowsPackageType>
 
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
+		<AndroidLdFlags>-Wl,-z,max-page-size=16384</AndroidLdFlags>
+		<AndroidUseAapt2>true</AndroidUseAapt2>
+		<RuntimeIdentifiers>android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
+		<InvariantGlobalization>false</InvariantGlobalization>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -42,32 +47,22 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-		<PackageReference Include="Microsoft.Maui.Essentials" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Pages\GridLayoutPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Pages\MainPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Pages\StackLayoutPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+	  <Compile Update="Pages\DevolverParametroPage.xaml.cs">
+	    <DependentUpon>DevolverParametroPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="Pages\GridLayoutPage.xaml">
+	  <MauiXaml Update="Pages\DevolverParametroPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
-	  </None>
-	  <None Update="Pages\MainPage.xaml">
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\RecibirParametroPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
-	  </None>
-	  <None Update="Pages\StackLayoutPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </None>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

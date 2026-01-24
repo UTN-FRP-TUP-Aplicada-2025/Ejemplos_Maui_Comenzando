@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Ejemplo_InyeccionYCicloVida.Services;
+using Microsoft.Extensions.Logging;
 
 namespace Ejemplo_InyeccionYCicloVida;
 
@@ -18,6 +19,8 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+        builder.Services.AddLogging();
+        builder.Services.AddSingleton<StatusService>();
 
         return builder.Build();
     }

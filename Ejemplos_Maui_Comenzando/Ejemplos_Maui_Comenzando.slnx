@@ -72,20 +72,25 @@
     <Project Path="Ejemplo_Inyeccion/Ejemplo_Inyeccion.csproj" Id="ca0f2877-81b2-4b0f-9764-be9dc3ec9b80">
       <Deploy />
     </Project>
-    <Project Path="Ejemplo_InyeccionYCicloVida/Ejemplo_InyeccionYCicloVida.csproj" Id="6bb363d3-bf7c-4e41-8d78-51779d143a7f" />
+    <Project Path="Ejemplo_InyeccionYCicloVida/Ejemplo_InyeccionYCicloVida.csproj" Id="6bb363d3-bf7c-4e41-8d78-51779d143a7f">
+      <Deploy Solution="Debug|*" />
+    </Project>
   </Folder>
   <Folder Name="/Layout/">
     <Project Path="Ejemplo_Layout/Ejemplo_Layout.csproj" Id="11d5e223-8c7f-48bb-976d-4f81500a73fc">
       <Deploy />
     </Project>
   </Folder>
-  <Folder Name="/Navegacion/" />
-  <Folder Name="/Navegacion/NavigationPage_Jerarquica_modal/">
+  <Folder Name="/NavegacionYPages/" />
+  <Folder Name="/NavegacionYPages/NavigationPage_Jerarquica_modal/">
     <Project Path="Ejemplo_NavigationPage/Ejemplo_NavigationPage.csproj" Id="11d00b6d-d342-4714-a619-6d7cf49d4d84">
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
-  <Folder Name="/Navegacion/Shell_multinivel/">
+  <Folder Name="/NavegacionYPages/Parametros/">
+    <Project Path="Ejemplo_PasoParametros/Ejemplo_PasoParametros.csproj" Id="1004a290-94d9-4f68-9f31-294625352f68" />
+  </Folder>
+  <Folder Name="/NavegacionYPages/Shell_multinivel/">
     <Project Path="Ejemplo_Flyout/Ejemplo_Flyout.csproj" Id="c066ed90-c741-4f6d-bdc2-d087dc01ff61">
       <Deploy Solution="Release|*" />
     </Project>

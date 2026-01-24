@@ -1,4 +1,4 @@
-﻿namespace Ejemplo_Inyeccion.Services;
+﻿namespace Ejemplo_InyeccionYCicloVida.Services;
 
 public class StatusService
 {

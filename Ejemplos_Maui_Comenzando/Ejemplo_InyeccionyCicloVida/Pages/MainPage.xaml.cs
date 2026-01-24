@@ -1,4 +1,4 @@
-﻿namespace Ejemplo_Inyeccion_y_CicloVida.Pages;
+﻿namespace Ejemplo_InyeccionYCicloVida.Pages;
 
 public partial class MainPage : ContentPage
 {

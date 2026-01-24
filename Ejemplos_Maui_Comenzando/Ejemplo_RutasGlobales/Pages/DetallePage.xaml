@@ -16,7 +16,7 @@
         <Label Text="{Binding Detalle.Edad}"/>
         
         <HorizontalStackLayout>
-            <CheckBox IsChecked="{Binding Detalle.EsActivo}}"/>
+            <CheckBox IsChecked="{Binding Detalle.EsActivo}"/>
             <Label Text="Está activo"/>
         </HorizontalStackLayout>
 
