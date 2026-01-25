@@ -1,6 +1,6 @@
-﻿using Ejemplo_PasoParametros.Pages;
+﻿using Ejemplo_PasoParametros_Callback;
 
-namespace Ejemplo_PasoParametros;
+namespace Ejemplo_PasoParametros_Callback;
 
 public partial class AppShell : Shell
 {

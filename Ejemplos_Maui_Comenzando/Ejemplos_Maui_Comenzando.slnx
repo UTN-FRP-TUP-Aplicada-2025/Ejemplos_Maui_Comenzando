@@ -28,21 +28,21 @@
     </Project>
     <Project Path="Ejemplo_ApiServer/Ejemplo_ApiServer.csproj" Id="5184170c-e964-4130-a519-0f5ad029268f" />
   </Folder>
-  <Folder Name="/Binding/">
-    <Project Path="Ejemplo_BasicDataBinding/Ejemplo_BasicDataBinding.csproj" Id="8a323236-8d75-4198-bf41-5a9c7d66abfc">
-      <Deploy />
-    </Project>
-    <Project Path="Ejemplo_BindingSimple/Ejemplo_BindingSimple.csproj" Id="4dde6c5e-ac32-44e7-8f69-d2ba187cae7d">
-      <Deploy Solution="Debug|*" />
-    </Project>
+  <Folder Name="/Binding/" />
+  <Folder Name="/Binding/ConSinBinding/">
     <Project Path="Ejemplo_ConBinding/Ejemplo_ConBinding.csproj" Id="0aede578-d75a-4ae5-9394-b7492d876d16">
-      <Deploy />
-    </Project>
-    <Project Path="Ejemplo_DirectionalBinding/Ejemplo_DirectionalBinding.csproj" Id="c7f2e1f5-7009-45cf-a1ab-2d7dc76760cd">
       <Deploy />
     </Project>
     <Project Path="Ejemplo_SinBinding/Ejemplo_SinBinding.csproj" Id="23a6b679-3fbd-413e-a89e-a108de4031c1">
       <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/Binding/DataBinding/">
+    <Project Path="Ejemplo_BasicDataBinding/Ejemplo_BasicDataBinding.csproj" Id="8a323236-8d75-4198-bf41-5a9c7d66abfc">
+      <Deploy />
+    </Project>
+    <Project Path="Ejemplo_ViewModelBinding/Ejemplo_ViewModelBinding.csproj" Id="9d331d9d-1cd5-43a4-8c0b-76448c4b0602">
+      <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
   <Folder Name="/Comenzando/">
@@ -82,15 +82,26 @@
     </Project>
   </Folder>
   <Folder Name="/NavegacionYPages/" />
-  <Folder Name="/NavegacionYPages/NavigationPage_Jerarquica_modal/">
+  <Folder Name="/NavegacionYPages/Parametros/" />
+  <Folder Name="/NavegacionYPages/Parametros/BackNavegation_Parametros/">
+    <Project Path="Ejemplo_PasoParametros/Ejemplo_PasoParametros_Callback.csproj" Id="1004a290-94d9-4f68-9f31-294625352f68">
+      <Deploy Solution="Debug|*" />
+    </Project>
+    <Project Path="Ejemplo_PasoParametros_Message/Ejemplo_PasoParametros_Message.csproj" Id="01db2af7-b40e-4588-bbe5-e90be0c5a7f8" />
+    <Project Path="Ejemplo_PasoParametros_Task/Ejemplo_PasoParametros_Task.csproj" Id="2f41c0d1-f84b-452c-8516-33baeae17fc9" />
+  </Folder>
+  <Folder Name="/NavegacionYPages/Parametros/ForwadNaveagtion_parametros/">
+    <Project Path="Ejemplo_QueryProperty/Ejemplo_QueryProperty.csproj" Id="3244d523-5a26-42f8-b3a5-16733a8600c5">
+      <Deploy Solution="Debug|*" />
+    </Project>
+  </Folder>
+  <Folder Name="/NavegacionYPages/TiposNavegacion/" />
+  <Folder Name="/NavegacionYPages/TiposNavegacion/NavigationPage_Jerarquica_modal/">
     <Project Path="Ejemplo_NavigationPage/Ejemplo_NavigationPage.csproj" Id="11d00b6d-d342-4714-a619-6d7cf49d4d84">
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
-  <Folder Name="/NavegacionYPages/Parametros/">
-    <Project Path="Ejemplo_PasoParametros/Ejemplo_PasoParametros.csproj" Id="1004a290-94d9-4f68-9f31-294625352f68" />
-  </Folder>
-  <Folder Name="/NavegacionYPages/Shell_multinivel/">
+  <Folder Name="/NavegacionYPages/TiposNavegacion/Shell_multinivel/">
     <Project Path="Ejemplo_Flyout/Ejemplo_Flyout.csproj" Id="c066ed90-c741-4f6d-bdc2-d087dc01ff61">
       <Deploy Solution="Release|*" />
     </Project>

@@ -5,9 +5,11 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
-            <Label x:Name="label" Text="TEXT" FontSize="48" HorizontalOptions="Center" VerticalOptions="Center" />
+            
+            <Label x:Name="LbBanner" Text="TEXT" FontSize="48"  HorizontalOptions="Center" VerticalOptions="Center" />
 
-            <Slider x:Name="slider" Maximum="360" VerticalOptions="Center"  ValueChanged="slider_ValueChanged"/>
+            <Slider x:Name="SlBanner" Maximum="360" VerticalOptions="Center" ValueChanged="OnRotarBannerValueChanged"/>
+                        
         </VerticalStackLayout>
     </ScrollView>
 

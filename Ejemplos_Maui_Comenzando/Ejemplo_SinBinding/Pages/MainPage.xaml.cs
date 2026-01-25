@@ -8,8 +8,10 @@ public partial class MainPage : ContentPage
         InitializeComponent();
     }
 
-    private void slider_ValueChanged(object sender, ValueChangedEventArgs e)
+    private void OnRotarBannerValueChanged(object sender, ValueChangedEventArgs e)
     {
-        label.Rotation = e.NewValue;
+        LbBanner.Rotation = e.NewValue;
+        // o
+        //LbBanner.Rotation = SlBanner.Value
     }
 }

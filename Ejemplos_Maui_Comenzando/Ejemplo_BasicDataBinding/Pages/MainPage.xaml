@@ -5,19 +5,20 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
-            <HorizontalStackLayout>
-                <Label Text="Nombre"/>
-                <Entry Text="{Binding nombre, Mode=TwoWay}" Keyboard="Text"/>
-            </HorizontalStackLayout>
 
-            <HorizontalStackLayout>
-                <Label Text="Edad"/>
-                <Entry Text="{Binding edad, Mode=TwoWay}" Keyboard="Numeric"/>
-            </HorizontalStackLayout>
+            <Grid ColumnDefinitions="*,3*" RowDefinitions="*">
+                <Label Text="Nombre" Grid.Column="0"/>
+                <Entry Text="{Binding Nombre}" Grid.Column="1"/>
+            </Grid>
 
-            <Button Text="Aceptar" Clicked="Button_Clicked"/>
+            <Grid ColumnDefinitions="*,3*" RowDefinitions="*">
+                <Label Text="Edad" Grid.Column="0" />
+                <Entry Text="{Binding Edad}" Keyboard="Numeric" Grid.Column="1"/>
+            </Grid>
+
+            <Button Text="Ver Datos"  Clicked="OnVerDatosClicked"/>
+
         </VerticalStackLayout>
-                
     </ScrollView>
 
 </ContentPage>

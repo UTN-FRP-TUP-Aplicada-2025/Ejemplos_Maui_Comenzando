@@ -1,4 +1,4 @@
-﻿namespace Ejemplo_PasoParametros.Pages;
+﻿namespace Ejemplo_PasoParametros_Callback.Pages;
 
 public partial class MainPage : ContentPage
 {

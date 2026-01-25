@@ -2,12 +2,36 @@
 
 public partial class MainPage : ContentPage
 {
-    
-    public string Nombre { get; set; }
-    public int Edad { get; set; }
+    string nombre;
+    public string Nombre
+    {
+        get => nombre;
+        set
+        {
+            if (nombre != value) //importante! evita que entre en un bucle
+            {
+                nombre = value;
+                OnPropertyChanged(); //para que funcione la bidireccionalidad
+            }
+        }
+    }
+
+    int edad;
+    public int Edad
+    {
+        get => edad;
+        set
+        {
+            if (edad != value)
+            {
+                edad = value;
+                OnPropertyChanged(); //para que funcione la bidireccionalidad
+            }
+        }
+    }
 
     public string Descripcion
-    { 
+    {
         get => $"Nombre: {Nombre}, Edad: {Edad} años.";
     }
 
@@ -15,10 +39,14 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
         BindingContext = this;
+
+        //probando la bidireccionalidad
+        Nombre = "Ana";
+        Edad = 30;
     }
 
-    async private void Button_Clicked(object sender, EventArgs e)
+    async private void OnVerDatosClicked(object sender, EventArgs e)
     {
-        await DisplayAlertAsync("CollectionView", $"{Descripcion}", "OK");
+        await DisplayAlertAsync("Ver Datos", Descripcion, "Ok");
     }
 }

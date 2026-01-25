@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net10.0-android;net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
@@ -12,10 +12,10 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Display name -->
-		<ApplicationTitle>Ejemplo_Flyout</ApplicationTitle>
+		<ApplicationTitle>Flyout Page</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.ejemplo_flyout</ApplicationId>
+		<ApplicationId>com.ejemplos.comenzando</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
