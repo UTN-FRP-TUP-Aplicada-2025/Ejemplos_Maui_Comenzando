@@ -41,7 +41,8 @@
     <Project Path="Ejemplo_BasicDataBinding/Ejemplo_BasicDataBinding.csproj" Id="8a323236-8d75-4198-bf41-5a9c7d66abfc">
       <Deploy />
     </Project>
-    <Project Path="Ejemplo_ViewModelBinding/Ejemplo_ViewModelBinding.csproj" Id="9d331d9d-1cd5-43a4-8c0b-76448c4b0602">
+    <Project Path="Ejemplo_Binding_ObservableObject/Ejemplo_Binding_ObservableObject.csproj" Id="9716386f-9be9-456e-b0cf-5315e65b7ad2" />
+    <Project Path="Ejemplo_Binding_INotifyProperty/Ejemplo_Binding_INotifyProperty.csproj" Id="9d331d9d-1cd5-43a4-8c0b-76448c4b0602">
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>

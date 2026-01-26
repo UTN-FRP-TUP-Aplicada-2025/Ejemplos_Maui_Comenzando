@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejemplo_Binding_ObservableObject.Pages.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+
+            <Grid ColumnDefinitions="*,3*" RowDefinitions="*">
+                <Label Text="Nombre" Grid.Column="0"/>
+                <Entry Text="{Binding Nombre}" Grid.Column="1"/>
+            </Grid>
+
+            <Grid ColumnDefinitions="*,3*" RowDefinitions="*">
+                <Label Text="Edad" Grid.Column="0" />
+                <Entry Text="{Binding Edad}" Keyboard="Numeric" Grid.Column="1"/>
+            </Grid>
+
+            <Button Text="Ver Datos"  Clicked="OnVerDatosClicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
