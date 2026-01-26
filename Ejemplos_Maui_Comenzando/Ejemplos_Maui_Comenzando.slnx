@@ -87,10 +87,10 @@
     <Project Path="Ejemplo_PasoParametros_Callback/Ejemplo_PasoParametros_Callback.csproj" Id="1004a290-94d9-4f68-9f31-294625352f68">
       <Deploy Solution="Debug|*" />
     </Project>
-    <Project Path="Ejemplo_PasoParametros_Message/Ejemplo_PasoParametros_Message.csproj" Id="01db2af7-b40e-4588-bbe5-e90be0c5a7f8">
+    <Project Path="Ejemplo_PasoParametros_Messenger/Ejemplo_PasoParametros_Messenger.csproj" Id="01db2af7-b40e-4588-bbe5-e90be0c5a7f8">
       <Deploy Solution="Debug|*" />
     </Project>
-    <Project Path="Ejemplo_PasoParametros_Task/Ejemplo_PasoParametros_Task.csproj" Id="2f41c0d1-f84b-452c-8516-33baeae17fc9">
+    <Project Path="Ejemplo_PasoParametros_TaskCompletion/Ejemplo_PasoParametros_TaskCompletion.csproj" Id="2f41c0d1-f84b-452c-8516-33baeae17fc9">
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
