@@ -1,10 +1,13 @@
-﻿namespace Ejemplo_PasoParametros_Message
-{
-    public partial class AppShell : Shell
+﻿using Ejemplo_PasoParametros_Message.Pages;
+
+namespace Ejemplo_PasoParametros_Message;
+
+public partial class AppShell : Shell
+{    
+    public AppShell()
     {
-        public AppShell()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+
+        Routing.RegisterRoute( nameof(DestinoPage), typeof(DestinoPage) );
     }
 }

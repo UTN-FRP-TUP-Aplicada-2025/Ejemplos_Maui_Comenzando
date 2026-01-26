@@ -11,7 +11,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
-		<ApplicationTitle>Ejemplo_BasicDataBinding</ApplicationTitle>
+		<ApplicationTitle>Basic Data Binding</ApplicationTitle>
 
 		<ApplicationId>com.ejemplos.comenzando</ApplicationId>
 

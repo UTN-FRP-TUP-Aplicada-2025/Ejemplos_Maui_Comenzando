@@ -1,23 +1,30 @@
-﻿namespace Ejemplo_PasoParametros_Message.Pages;
+﻿using CommunityToolkit.Mvvm.Messaging;
+using Ejemplo_PasoParametros_Message.Commons;
+
+namespace Ejemplo_PasoParametros_Message.Pages;
 
 public partial class MainPage : ContentPage
 {
-    int count = 0;
-
     public MainPage()
     {
         InitializeComponent();
+
+        WeakReferenceMessenger.Default.Register<MiMessage>(this, (r, m) =>
+        {
+            OnMensajeRecibido(m.Value);
+        });
     }
 
-    private void OnCounterClicked(object? sender, EventArgs e)
+    private void OnMensajeRecibido(MiParametro datos)
     {
-        count++;
+        MainThread.BeginInvokeOnMainThread(() =>
+        {
+            LbResultado.Text = datos.Valor;
+        });
+    }
 
-        if (count == 1)
-            CounterBtn.Text = $"Clicked {count} time";
-        else
-            CounterBtn.Text = $"Clicked {count} times";
-
-        SemanticScreenReader.Announce(CounterBtn.Text);
+    async private void OnIrADestinoClicked(object? sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(DestinoPage));
     }
 }

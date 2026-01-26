@@ -1,10 +1,24 @@
+
+using CommunityToolkit.Mvvm.Messaging;
+using Ejemplo_PasoParametros_Message.Commons;
+
 namespace Ejemplo_PasoParametros_Message.Pages;
 
-[QueryProperty(nameof(Valor), "valor")]
 public partial class DestinoPage : ContentPage
 {
-	public DestinoPage()
-	{
-		InitializeComponent();
-	}
+
+    public Action<string>? OnDevolverParametroCallback { get; set; }
+
+    public DestinoPage()
+    {
+        InitializeComponent();
+    }
+
+    async private void OnVolverConParametrosClicked(object sender, EventArgs e)
+    {
+        MiParametro parametro = new MiParametro() { Valor = $"{DateTime.Now:dd/MM/yyyy HH:mm}" };
+        
+        WeakReferenceMessenger.Default.Send( new MiMessage(parametro) );
+        await Shell.Current.GoToAsync("..");
+    }
 }

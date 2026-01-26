@@ -1,23 +1,31 @@
-﻿namespace Ejemplo_PasoParametros_Task;
+﻿using Ejemplo_PasoParametros_Task.Commons;
+
+namespace Ejemplo_PasoParametros_Task.Pages;
 
 public partial class MainPage : ContentPage
 {
-    int count = 0;
-
     public MainPage()
     {
         InitializeComponent();
     }
 
-    private void OnCounterClicked(object? sender, EventArgs e)
+    async private void OnIrADestinoClicked(object? sender, EventArgs e)
     {
-        count++;
+        // Crea la promesa
+        var tcs = new TaskCompletionSource<MiParametro>();
 
-        if (count == 1)
-            CounterBtn.Text = $"Clicked {count} time";
-        else
-            CounterBtn.Text = $"Clicked {count} times";
+        var pageParams = new ShellNavigationQueryParameters
+        {
+          {  "OnDevolverParametroCallback" , new Action<MiParametro>( val => tcs.SetResult(val) )  }
+        };
 
-        SemanticScreenReader.Announce(CounterBtn.Text);
+        await Shell.Current.GoToAsync(nameof(DestinoPage), pageParams);
+
+        //se queda "esperando" aquí de forma asíncrona
+        var resultado = await tcs.Task;
+
+        LbResultado.Text = resultado.Valor;
+
+
     }
 }

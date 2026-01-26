@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace Ejemplo_PasoParametros_Message;
+namespace Ejemplo_PasoParametros_Callback;
 
 [Application]
 public class MainApplication : MauiApplication

@@ -4,11 +4,9 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Ejemplo_PasoParametros_Task"
+    xmlns:pages="clr-namespace:Ejemplo_PasoParametros_Task.Pages"
     Title="Ejemplo_PasoParametros_Task">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <ShellContent Title="Home" ContentTemplate="{DataTemplate pages:MainPage}" Route="MainPage" />
 
 </Shell>

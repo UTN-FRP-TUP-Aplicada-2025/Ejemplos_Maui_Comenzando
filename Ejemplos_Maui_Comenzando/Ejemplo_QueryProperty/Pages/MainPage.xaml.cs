@@ -1,4 +1,6 @@
-﻿namespace Ejemplo_QueryProperty.Pages;
+﻿using Ejemplo_QueryProperty.Parameters;
+
+namespace Ejemplo_QueryProperty.Pages;
 
 public partial class MainPage : ContentPage
 {
@@ -11,7 +13,7 @@ public partial class MainPage : ContentPage
     {
         var pageParams = new ShellNavigationQueryParameters
         {
-          {"nombre_parametro" , new MiClase{ Valor="Valor de prueba" } }
+          {"nombre_parametro" , new MiParametro{ Valor="Valor de prueba" } }
         };
 
         await Shell.Current.GoToAsync(nameof(DestinoPage), pageParams);

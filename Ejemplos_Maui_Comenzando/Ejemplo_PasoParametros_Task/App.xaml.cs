@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-
+﻿
 namespace Ejemplo_PasoParametros_Task;
 
 public partial class App : Application

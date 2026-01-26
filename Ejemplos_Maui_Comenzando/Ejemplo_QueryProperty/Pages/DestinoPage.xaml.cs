@@ -1,13 +1,12 @@
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
+using Ejemplo_QueryProperty.Commons;
 
 namespace Ejemplo_QueryProperty.Pages;
 
 [QueryProperty(nameof(Parametro), "nombre_parametro")]
 public partial class DestinoPage : ContentPage
 {
-    MiClase parametro;
-    public MiClase Parametro 
+    MiParametro parametro=new ();
+    public MiParametro Parametro 
     {
         get
         {
@@ -23,13 +22,6 @@ public partial class DestinoPage : ContentPage
         }
     }
 
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    protected void OnPropertyChanged([CallerMemberName] string name = "")
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-    }
-    
     public DestinoPage()
 	{
 		InitializeComponent();

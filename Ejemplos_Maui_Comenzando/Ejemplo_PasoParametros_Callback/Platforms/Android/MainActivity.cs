@@ -2,7 +2,7 @@
 using Android.Content.PM;
 using Android.OS;
 
-namespace Ejemplo_PasoParametros_Message;
+namespace Ejemplo_PasoParametros_Callback;
 
 [Activity(Theme = "@style/Maui.SplashTheme", MainLauncher = true, LaunchMode = LaunchMode.SingleTop, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize | ConfigChanges.Density)]
 public class MainActivity : MauiAppCompatActivity

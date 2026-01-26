@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-
-namespace Ejemplo_QueryProperty;
+﻿namespace Ejemplo_QueryProperty;
 
 public partial class App : Application
 {

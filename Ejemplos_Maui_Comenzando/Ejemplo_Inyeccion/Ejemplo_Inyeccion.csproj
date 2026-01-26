@@ -20,32 +20,17 @@
 
 		<WindowsPackageType>None</WindowsPackageType>
 
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">25.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
+		<AndroidLdFlags>-Wl,-z,max-page-size=16384</AndroidLdFlags>
 		<AndroidUseAapt2>true</AndroidUseAapt2>
 		<RuntimeIdentifiers>android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
 		<InvariantGlobalization>false</InvariantGlobalization>
 	</PropertyGroup>
-
-	<!--
-	<PropertyGroup Condition="'$(Configuration)' == 'Release' AND $([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
-		<AndroidUseAapt2>true</AndroidUseAapt2>
-		<RuntimeIdentifiers>android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
-		<InvariantGlobalization>false</InvariantGlobalization>
-	</PropertyGroup>
-
-	<PropertyGroup Condition="'$(Configuration)' == 'Debug' AND $([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
-		<RuntimeIdentifiers>android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
-	
-		<EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
-		<AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
-		<AndroidLinkMode>None</AndroidLinkMode>
-	</PropertyGroup>
-	-->
 	
 	<ItemGroup>
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />

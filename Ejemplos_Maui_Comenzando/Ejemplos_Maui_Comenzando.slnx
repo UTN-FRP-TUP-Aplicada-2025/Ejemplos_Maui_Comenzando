@@ -84,11 +84,15 @@
   <Folder Name="/NavegacionYPages/" />
   <Folder Name="/NavegacionYPages/Parametros/" />
   <Folder Name="/NavegacionYPages/Parametros/BackNavegation_Parametros/">
-    <Project Path="Ejemplo_PasoParametros/Ejemplo_PasoParametros_Callback.csproj" Id="1004a290-94d9-4f68-9f31-294625352f68">
+    <Project Path="Ejemplo_PasoParametros_Callback/Ejemplo_PasoParametros_Callback.csproj" Id="1004a290-94d9-4f68-9f31-294625352f68">
       <Deploy Solution="Debug|*" />
     </Project>
-    <Project Path="Ejemplo_PasoParametros_Message/Ejemplo_PasoParametros_Message.csproj" Id="01db2af7-b40e-4588-bbe5-e90be0c5a7f8" />
-    <Project Path="Ejemplo_PasoParametros_Task/Ejemplo_PasoParametros_Task.csproj" Id="2f41c0d1-f84b-452c-8516-33baeae17fc9" />
+    <Project Path="Ejemplo_PasoParametros_Message/Ejemplo_PasoParametros_Message.csproj" Id="01db2af7-b40e-4588-bbe5-e90be0c5a7f8">
+      <Deploy Solution="Debug|*" />
+    </Project>
+    <Project Path="Ejemplo_PasoParametros_Task/Ejemplo_PasoParametros_Task.csproj" Id="2f41c0d1-f84b-452c-8516-33baeae17fc9">
+      <Deploy Solution="Debug|*" />
+    </Project>
   </Folder>
   <Folder Name="/NavegacionYPages/Parametros/ForwadNaveagtion_parametros/">
     <Project Path="Ejemplo_QueryProperty/Ejemplo_QueryProperty.csproj" Id="3244d523-5a26-42f8-b3a5-16733a8600c5">
@@ -111,9 +115,6 @@
     <Project Path="Ejemplo_Tabbed/Ejemplo_Tabbed.csproj" Id="d35e04b6-7573-4698-9a99-aeafde02b359">
       <Deploy Solution="Release|*" />
     </Project>
-  </Folder>
-  <Folder Name="/Repaso/">
-    <Project Path="Ejemplo_RepasoBasico/Ejemplo_RepasoBasico.csproj" Id="ce952261-05d7-4e81-8633-925114820a0e" />
   </Folder>
   <Folder Name="/Views/">
     <Project Path="Ejemplo_Views/Ejemplo_Views.csproj">

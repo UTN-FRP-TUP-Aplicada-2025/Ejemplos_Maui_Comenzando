@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net10.0-android;net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks>net10.0-android</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net10.0-windows10.0.19041.0</TargetFrameworks>
 
 		<OutputType>Exe</OutputType>
@@ -11,9 +11,9 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
-		<ApplicationTitle>Ejemplo_ViewModelBinding</ApplicationTitle>
+		<ApplicationTitle>ViewModel Binding</ApplicationTitle>
 
-		<ApplicationId>com.companyname.ejemplo_viewmodelbinding</ApplicationId>
+		<ApplicationId>com.ejemplos.comenzando</ApplicationId>
 
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
