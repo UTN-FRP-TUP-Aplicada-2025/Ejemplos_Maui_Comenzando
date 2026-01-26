@@ -24,8 +24,13 @@ public partial class MainPage : ContentPage
         //se queda "esperando" aquí de forma asíncrona
         var resultado = await tcs.Task;
 
-        LbResultado.Text = resultado.Valor;
-
-
+        if (resultado != null)
+        {
+            LbResultado.Text = resultado.Valor;
+        }
+        else
+        {
+            await DisplayAlertAsync("Cancelado", "No se recibió ningún dato", "OK");
+        }
     }
 }

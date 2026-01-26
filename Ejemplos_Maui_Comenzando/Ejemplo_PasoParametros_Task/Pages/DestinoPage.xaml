@@ -6,8 +6,11 @@
 
     <VerticalStackLayout Padding="30,0" Spacing="25">
 
-        <Button Text="Volver con parámetros" Clicked="OnVolverConParametrosClicked"/>
-
+        <HorizontalStackLayout Spacing="10" Margin="10">
+            <Button Text="Volver con parámetros" Clicked="OnVolverConParametrosClicked"/>
+            <Button Text="Cancelar" Clicked="OnCancelarClicked"/>
+        </HorizontalStackLayout>
+                
     </VerticalStackLayout>
 
 </ContentPage>
