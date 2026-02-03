@@ -1,4 +1,4 @@
-﻿namespace Ejemplo_Flyout;
+﻿namespace Ejemplo_Flyout.Pages;
 
 public partial class MainPage : ContentPage
 {

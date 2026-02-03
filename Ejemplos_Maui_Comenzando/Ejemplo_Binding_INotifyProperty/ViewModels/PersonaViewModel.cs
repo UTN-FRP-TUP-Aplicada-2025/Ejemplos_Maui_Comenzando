@@ -29,7 +29,7 @@ public class PersonaViewModel : INotifyPropertyChanged
     int edad;
     public int Edad
     {
-        get => edad;
+        get { return edad; }
         set
         {
             if (edad != value)

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace Ejemplo_Flyout;
+namespace Ejemplo_DatosPersona;
 
 public static class MauiProgram
 {
@@ -13,7 +13,6 @@ public static class MauiProgram
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                fonts.AddFont("MaterialIconsOutlined-Regular.otf", "MaterialIconsOutlined");
             });
 
 #if DEBUG

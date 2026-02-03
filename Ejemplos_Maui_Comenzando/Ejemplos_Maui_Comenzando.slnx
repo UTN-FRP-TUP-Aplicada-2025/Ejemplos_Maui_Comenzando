@@ -29,7 +29,7 @@
     <Project Path="Ejemplo_ApiServer/Ejemplo_ApiServer.csproj" Id="5184170c-e964-4130-a519-0f5ad029268f" />
   </Folder>
   <Folder Name="/Binding/" />
-  <Folder Name="/Binding/ConSinBinding/">
+  <Folder Name="/Binding/BasicBinding/">
     <Project Path="Ejemplo_ConBinding/Ejemplo_ConBinding.csproj" Id="0aede578-d75a-4ae5-9394-b7492d876d16">
       <Deploy />
     </Project>
@@ -41,20 +41,10 @@
     <Project Path="Ejemplo_BasicDataBinding/Ejemplo_BasicDataBinding.csproj" Id="8a323236-8d75-4198-bf41-5a9c7d66abfc">
       <Deploy />
     </Project>
-    <Project Path="Ejemplo_Binding_ObservableObject/Ejemplo_Binding_ObservableObject.csproj" Id="9716386f-9be9-456e-b0cf-5315e65b7ad2" />
+    <Project Path="Ejemplo_Binding_ObservableObject/Ejemplo_Binding_ObservableObject.csproj" Id="9716386f-9be9-456e-b0cf-5315e65b7ad2">
+      <Deploy Solution="Debug|*" />
+    </Project>
     <Project Path="Ejemplo_Binding_INotifyProperty/Ejemplo_Binding_INotifyProperty.csproj" Id="9d331d9d-1cd5-43a4-8c0b-76448c4b0602">
-      <Deploy Solution="Debug|*" />
-    </Project>
-  </Folder>
-  <Folder Name="/Comenzando/">
-    <Project Path="Ejemplo_DirectivaPreprocesador/Ejemplo_DirectivaPreprocesador.csproj" Id="9ca8c8a4-6a11-4a0c-a5f4-7c96653cd302">
-      <Deploy Solution="Debug|*" />
-    </Project>
-    <Project Path="Ejemplo_FicheroProyecto/Ejemplo_FicheroProyecto.csproj" Id="235deccf-0823-4f59-8dc6-7bd9d65011d3" />
-    <Project Path="Ejemplo_HolaMundo/Ejemplo_HolaMundo.csproj">
-      <Deploy />
-    </Project>
-    <Project Path="Ejemplo_ClaseParcial/Ejemplo_ClaseParcial.csproj" Id="f60fb776-7325-4a89-bff9-237dc8c52c1c">
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
@@ -68,6 +58,11 @@
       <Deploy />
     </Project>
     <Project Path="Ejemplo_ws_Blazor/Ejemplo_ws_Blazor.csproj" Id="fcd02ad7-aaf5-4480-8962-8e9901340ca8" />
+  </Folder>
+  <Folder Name="/Integracion/">
+    <Project Path="Ejemplo_DatosPersona/Ejemplo_DatosPersona.csproj" Id="63fb5de6-2f14-49d3-90e2-25e7a91ce27e">
+      <Deploy Solution="Debug|*" />
+    </Project>
   </Folder>
   <Folder Name="/Inyeccion/">
     <Project Path="Ejemplo_Inyeccion/Ejemplo_Inyeccion.csproj" Id="ca0f2877-81b2-4b0f-9764-be9dc3ec9b80">
@@ -115,6 +110,18 @@
     </Project>
     <Project Path="Ejemplo_Tabbed/Ejemplo_Tabbed.csproj" Id="d35e04b6-7573-4698-9a99-aeafde02b359">
       <Deploy Solution="Release|*" />
+    </Project>
+  </Folder>
+  <Folder Name="/Temas_c#/">
+    <Project Path="Ejemplo_ClaseParcial/Ejemplo_ClaseParcial.csproj" Id="f60fb776-7325-4a89-bff9-237dc8c52c1c">
+      <Deploy Solution="Debug|*" />
+    </Project>
+    <Project Path="Ejemplo_DirectivaPreprocesador/Ejemplo_DirectivaPreprocesador.csproj" Id="9ca8c8a4-6a11-4a0c-a5f4-7c96653cd302">
+      <Deploy Solution="Debug|*" />
+    </Project>
+    <Project Path="Ejemplo_FicheroProyecto/Ejemplo_FicheroProyecto.csproj" Id="235deccf-0823-4f59-8dc6-7bd9d65011d3" />
+    <Project Path="Ejemplo_HolaMundo/Ejemplo_HolaMundo.csproj">
+      <Deploy />
     </Project>
   </Folder>
   <Folder Name="/Views/">

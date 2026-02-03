@@ -12,9 +12,9 @@ public partial class MainPage : ContentPage
         var destinoPage = new DestinoPage();
 
         //alternativa var resultado = await this.ShowPopupAsync(new MiPopupSeleccion());
-
         await Navigation.PushAsync(destinoPage);
 
+        //se bloquea hasta que consiga el resultado
         var parametro = await destinoPage.ResultadoTask.Task;
 
         if (parametro!=null)

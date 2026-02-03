@@ -19,8 +19,9 @@ public partial class DestinoPage : ContentPage
         var parametro = new MiParametro() { Valor= $"{DateTime.Now:dd/MM/yyyy HH:mm}" };
 
         ResultadoTask.SetResult( parametro );
+
         //await Shell.Current.GoToAsync("..");
-        
+        //o        
         await Navigation.PopAsync();
     }
 
