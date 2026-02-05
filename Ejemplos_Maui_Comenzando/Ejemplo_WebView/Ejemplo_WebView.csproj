@@ -11,7 +11,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
-		<ApplicationTitle>Ejemplo_WebView</ApplicationTitle>
+		<ApplicationTitle>WebView</ApplicationTitle>
 
 		<ApplicationId>com.ejemplos.comenzando</ApplicationId>
 

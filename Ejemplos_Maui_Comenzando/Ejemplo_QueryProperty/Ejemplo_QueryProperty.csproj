@@ -11,9 +11,9 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
-		<ApplicationTitle>Ejemplo_QueryProperty</ApplicationTitle>
+		<ApplicationTitle>QueryProperty</ApplicationTitle>
 
-		<ApplicationId>com.eejemplos.comenzando</ApplicationId>
+		<ApplicationId>com.ejemplos.comenzando</ApplicationId>
 
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>

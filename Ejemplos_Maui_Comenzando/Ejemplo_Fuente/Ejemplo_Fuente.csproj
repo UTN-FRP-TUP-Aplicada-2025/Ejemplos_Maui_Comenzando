@@ -11,7 +11,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
-		<ApplicationTitle>Ejemplo_Fuente</ApplicationTitle>
+		<ApplicationTitle>Fuente</ApplicationTitle>
 
 		<ApplicationId>com.ejemplos.comenzando</ApplicationId>
 

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net10.0-android;net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
@@ -11,9 +11,9 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		
-		<ApplicationTitle>Ejemplo_HolaMundo</ApplicationTitle>
+		<ApplicationTitle>Hola Mundo!</ApplicationTitle>
 
-		<ApplicationId>com.companyname.ejemplo_holamundo</ApplicationId>
+		<ApplicationId>com.ejemplos.comenzando</ApplicationId>
 
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>

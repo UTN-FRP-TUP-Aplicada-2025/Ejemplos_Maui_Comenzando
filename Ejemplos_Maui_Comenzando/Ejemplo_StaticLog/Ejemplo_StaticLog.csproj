@@ -11,9 +11,9 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
-		<ApplicationTitle>Ejemplo_StaticLog</ApplicationTitle>
+		<ApplicationTitle>StaticLog</ApplicationTitle>
 
-		<ApplicationId>com.companyname.ejemplo_staticlog</ApplicationId>
+		<ApplicationId>com.ejemplos.comenzando</ApplicationId>
 
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
 		<ApplicationVersion>1</ApplicationVersion>
