@@ -12,16 +12,19 @@
     ContentTemplate="{DataTemplate local:MainPage}"
     Route="MainPage" />-->
 
-    <FlyoutItem Title="Home">
-        <!--Icon="cat.png">-->
+    <ShellContent Route="qrpage" ContentTemplate="{DataTemplate pages:MainPage}" />
+
+    <!--<FlyoutItem Title="Home">
+        --><!--Icon="cat.png">--><!--
         <FlyoutItem.Icon>
             <FontImageSource Glyph="home" FontFamily="MaterialIconsOutlined"  Size="24" Color="Black"  />
         </FlyoutItem.Icon>
 
         <Tab>
-            <ShellContent ContentTemplate="{DataTemplate pages:APage}" />
+            <ShellContent ContentTemplate="{DataTemplate pages:MainPage}" />
         </Tab>
-    </FlyoutItem>
+    </FlyoutItem>-->
+
     <FlyoutItem Title="Cats">
         <!--Icon="cat.png">-->
         <FlyoutItem.Icon>
@@ -32,6 +35,7 @@
             <ShellContent ContentTemplate="{DataTemplate pages:APage}" />
         </Tab>
     </FlyoutItem>
+    
     <FlyoutItem Title="Configuracion">
         <FlyoutItem.Icon>
             <FontImageSource Glyph="settings" FontFamily="MaterialIconsOutlined"  Size="24" Color="Black"  />
@@ -41,4 +45,19 @@
             <ShellContent ContentTemplate="{DataTemplate pages:BPage}" />
         </Tab>
     </FlyoutItem>
+
+    <MenuItem Text="Politica de privacidad"            
+              Command="{Binding ContactCommand}"
+              CommandParameter="https://www.frp.utn.edu.ar/info2/?page_id=18452" >
+        <MenuItem.IconImageSource>
+            <FontImageSource Glyph="contact_page" FontFamily="MaterialIconsOutlined"  Size="24" Color="Black"  />
+        </MenuItem.IconImageSource>
+    </MenuItem>
+
+    <MenuItem Text="Politica de privacidad" 
+           Clicked="MenuItem_Clicked"
+        <MenuItem.IconImageSource>
+            <FontImageSource Glyph="contact_page" FontFamily="MaterialIconsOutlined"  Size="24" Color="Black"  />
+        </MenuItem.IconImageSource>
+    </MenuItem>
 </Shell>

@@ -53,10 +53,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="NewFolder\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <Compile Update="Pages\Infopage.xaml.cs">
 	    <DependentUpon>InfoPage.xaml</DependentUpon>
 	  </Compile>
