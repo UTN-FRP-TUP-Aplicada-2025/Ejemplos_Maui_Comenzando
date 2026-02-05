@@ -1,7 +1,4 @@
-﻿using Java.Net;
-using System.Windows.Input;
-using Xamarin.Google.Crypto.Tink.Shaded.Protobuf;
-using static Android.Provider.Settings;
+﻿using System.Windows.Input;
 
 namespace Ejemplo_Flyout;
 

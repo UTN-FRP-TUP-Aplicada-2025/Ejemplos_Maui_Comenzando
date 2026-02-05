@@ -10,10 +10,10 @@
     <!--<ShellContent
     Title="Home"
     ContentTemplate="{DataTemplate local:MainPage}"
-    Route="MainPage" />-->
+    Route="MainPage" />
 
     <ShellContent Route="qrpage" ContentTemplate="{DataTemplate pages:MainPage}" />
-
+-->
     <!--<FlyoutItem Title="Home">
         --><!--Icon="cat.png">--><!--
         <FlyoutItem.Icon>
@@ -25,7 +25,7 @@
         </Tab>
     </FlyoutItem>-->
 
-    <FlyoutItem Title="Cats">
+    <FlyoutItem Title="Contacts">
         <!--Icon="cat.png">-->
         <FlyoutItem.Icon>
             <FontImageSource Glyph="contact_page" FontFamily="MaterialIconsOutlined"  Size="24" Color="Black"  />
@@ -55,7 +55,7 @@
     </MenuItem>
 
     <MenuItem Text="Politica de privacidad" 
-           Clicked="MenuItem_Clicked"
+           Clicked="MenuItem_Clicked">
         <MenuItem.IconImageSource>
             <FontImageSource Glyph="contact_page" FontFamily="MaterialIconsOutlined"  Size="24" Color="Black"  />
         </MenuItem.IconImageSource>
