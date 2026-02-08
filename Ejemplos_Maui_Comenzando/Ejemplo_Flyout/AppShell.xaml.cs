@@ -4,7 +4,6 @@ namespace Ejemplo_Flyout;
 
 public partial class AppShell : Shell
 {
-
     public ICommand ContactCommand { get; private set; }
 
     public AppShell()

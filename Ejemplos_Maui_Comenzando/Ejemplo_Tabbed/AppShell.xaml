@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Ejemplo_Tabbed"
     xmlns:pages="clr-namespace:Ejemplo_Tabbed.Pages"
+    Shell.NavBarIsVisible="False"
     Title="Ejemplo Tabbed">
 
     <!--<ShellContent
@@ -14,14 +15,23 @@
 
     <TabBar>
         <Tab Title="Main">
+            <Tab.Icon>
+                <FontImageSource Glyph="contact_page" FontFamily="MaterialIconsOutlined"  Size="24" Color="Black"  />
+            </Tab.Icon>
             <ShellContent ContentTemplate="{DataTemplate pages:MainPage}" />
         </Tab>
 
         <Tab Title="Page A">
+            <Tab.Icon>
+                <FontImageSource Glyph="contact_page" FontFamily="MaterialIconsOutlined"  Size="24" Color="Black"  />
+            </Tab.Icon>
             <ShellContent ContentTemplate="{DataTemplate pages:APage}" />
         </Tab>
 
         <Tab Title="Page B">
+            <Tab.Icon>
+                <FontImageSource Glyph="contact_page" FontFamily="MaterialIconsOutlined"  Size="24" Color="Black"  />
+            </Tab.Icon>
             <ShellContent ContentTemplate="{DataTemplate pages:BPage}" />
         </Tab>
     </TabBar>
