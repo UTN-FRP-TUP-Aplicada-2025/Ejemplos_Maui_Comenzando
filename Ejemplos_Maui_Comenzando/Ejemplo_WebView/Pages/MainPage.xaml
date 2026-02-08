@@ -3,12 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ejemplo_WebView.Pages.MainPage">
 
-    <ScrollView>
-        <VerticalStackLayout Padding="30,0" Spacing="25">
+    <Grid RowDefinitions="Auto, *">
 
-            <WebView x:Name="webView" Navigating="WebView_Navigating" Navigated="WebView_Navigated"/>
+        <Button Grid.Row="0" 
+                Text="{Binding ButtonText}" 
+                Clicked="OnRefreshingClicked"
+                Margin="10"/>
 
-        </VerticalStackLayout>
-    </ScrollView>
+        <RefreshView Grid.Row="1"
+                 x:Name="refreshView" 
+                 IsRefreshing="{Binding IsRefreshing}"  
+                 IsEnabled="True" 
+                 Refreshing="OnRefreshViewRefreshing">
 
+            <WebView x:Name="webView" 
+                 Navigating="WebView_Navigating" 
+                 Navigated="WebView_Navigated"/>
+            
+        </RefreshView>
+
+    </Grid>
 </ContentPage>

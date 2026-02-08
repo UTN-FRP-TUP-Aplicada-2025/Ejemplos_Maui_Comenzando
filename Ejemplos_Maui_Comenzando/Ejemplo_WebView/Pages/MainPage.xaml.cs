@@ -1,55 +1,83 @@
-﻿using System;
-
-namespace Ejemplo_WebView.Pages;
+﻿namespace Ejemplo_WebView.Pages;
 
 public partial class MainPage : ContentPage
 {
-   
+    public string buttonText = "";
+    public string ButtonText
+    {
+        get => buttonText;
+        set
+        {
+            buttonText = value;
+            OnPropertyChanged();
+        }
+    }
+
+    public bool enableRefreshing = false;
+    public bool EnableRefreshing
+    { 
+        get => enableRefreshing;
+        set
+        {
+            enableRefreshing = value;
+            OnPropertyChanged();
+
+            ActualizarBoton();
+        }
+    }
+
+    
+    public bool isRefreshing = false;
+    public bool IsRefreshing
+    {
+        get => isRefreshing;
+        set
+        {
+            isRefreshing = value;
+            OnPropertyChanged();
+        }
+    }
+
+    public void OnRefreshingClicked(object sender, EventArgs e)
+    {
+        EnableRefreshing = !EnableRefreshing;
+        ActualizarBoton();
+    }
+
+    private void ActualizarBoton()
+    {
+        if (enableRefreshing) ButtonText = "Desactivar";
+        else ButtonText = "Activar";
+    }
 
     public MainPage()
     {
         InitializeComponent();
 
-        //webView.Source = "https://hxbt1xfz-7102.brs.devtunnels.ms/";//"https://hxbt1xfz-7257.brs.devtunnels.ms/";
+        EnableRefreshing = true;
+
+        BindingContext = this;
+
         webView.Source = "https://geometriafernando.somee.com/";
-
-//var request = new HttpRequestMessage(HttpMethod.Get, "https://hxbt1xfz-7102.brs.devtunnels.ms/");
-
-//request.Headers.Add("X-Tunnel-Skip-AntiPhishing-Page", "true");
-
-//webView.Source = new UrlWebViewSource
-//{
-//    Url = "https://hxbt1xfz-7102.brs.devtunnels.ms/"
-//};
-
-//var webViewSource = new UrlWebViewSource
-//{
-//    Url = "https://hxbt1xfz-7102.brs.devtunnels.ms/"
-//};
-
-//#if ANDROID
-//    var nativeWebView = webView.Handler?.PlatformView as Android.Webkit.WebView;
-//    if (nativeWebView != null)
-//    {
-//        Dictionary<string, string> headers = new Dictionary<string, string>
-//        {
-//            { "X-Tunnel-Skip-AntiPhishing-Page", "true" }
-//        };
-//        nativeWebView.LoadUrl("https://geometriafernando.somee.com/", headers);
-//    }
-//# endif
     }
 
     private void WebView_Navigating(object sender, WebNavigatingEventArgs e)
     {
-        //if (e.Url.Contains("foto"))
-        //{
-        //    e.Cancel = true;
-        //}
     }
 
     private void WebView_Navigated(object sender, WebNavigatedEventArgs e)
     {
-
     }
+
+    private void OnRefreshViewRefreshing(object sender, EventArgs e)
+    {
+        if (!EnableRefreshing)
+        {
+            IsRefreshing = false;
+            return;
+        }
+
+        webView.Reload();
+    }
+
 }

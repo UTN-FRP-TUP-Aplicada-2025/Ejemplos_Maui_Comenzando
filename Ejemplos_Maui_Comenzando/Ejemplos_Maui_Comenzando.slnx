@@ -3,9 +3,6 @@
     <Project Path="Ejemplo_CicloDeVida/Ejemplo_CicloDeVida.csproj" Id="6b77b1e0-b433-41ee-b2bb-cf5d4c09ea46">
       <Deploy />
     </Project>
-    <Project Path="Ejemplo_Fuente/Ejemplo_Fuente.csproj" Id="5aa241de-7b7a-4890-a742-ad622da6657a">
-      <Deploy Solution="Release|*" />
-    </Project>
     <Project Path="Ejemplo_ILogger/Ejemplo_ILogger.csproj" Id="bd3a24a4-42e2-4aac-aa15-876268ba2739">
       <Deploy />
     </Project>
@@ -103,13 +100,13 @@
   </Folder>
   <Folder Name="/NavegacionYPages/TiposNavegacion/Shell_multinivel/">
     <Project Path="Ejemplo_Flyout/Ejemplo_Flyout.csproj" Id="c066ed90-c741-4f6d-bdc2-d087dc01ff61">
-      <Deploy Solution="Release|*" />
+      <Deploy />
     </Project>
     <Project Path="Ejemplo_RutasGlobales/Ejemplo_RutasGlobales.csproj">
       <Deploy />
     </Project>
     <Project Path="Ejemplo_Tabbed/Ejemplo_Tabbed.csproj" Id="d35e04b6-7573-4698-9a99-aeafde02b359">
-      <Deploy Solution="Release|*" />
+      <Deploy />
     </Project>
   </Folder>
   <Folder Name="/Temas_c#/">
@@ -121,6 +118,14 @@
     </Project>
     <Project Path="Ejemplo_FicheroProyecto/Ejemplo_FicheroProyecto.csproj" Id="235deccf-0823-4f59-8dc6-7bd9d65011d3" />
     <Project Path="Ejemplo_HolaMundo/Ejemplo_HolaMundo.csproj">
+      <Deploy />
+    </Project>
+    <Project Path="Ejemplo_Theads/Ejemplo_Theads.csproj" Id="ce6c3fda-16b1-4207-80b6-c002f3cd08ac">
+      <Deploy Solution="Debug|*" />
+    </Project>
+  </Folder>
+  <Folder Name="/Temas_de_Estilos/">
+    <Project Path="Ejemplo_Fuentes_Iconos/Ejemplo_Fuentes_Iconos.csproj" Id="5aa241de-7b7a-4890-a742-ad622da6657a">
       <Deploy />
     </Project>
   </Folder>

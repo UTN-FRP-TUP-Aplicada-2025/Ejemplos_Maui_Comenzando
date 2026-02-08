@@ -1,11 +1,40 @@
-﻿@page "/Index"
-@page "/"
+﻿@page "/"
 
 @rendermode InteractiveServer
 @attribute [StreamRendering]
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<EditForm Model="persona" OnValidSubmit="HandleSubmit">
 
-Welcome to your new app.
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div>
+        <label>DNI:</label>
+        <InputNumber @bind-Value="persona.Dni" class="form-control" />
+    </div>
+
+    <div>
+        <label>Nombre:</label>
+        <InputText @bind-Value="persona.Nombre" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</EditForm>
+
+@code {
+    
+    private PersonaViewModel persona { get; set; } = new();
+
+    private void HandleSubmit()
+    {
+        Console.WriteLine($"Enviado: {persona.Nombre} con DNI: {persona.Dni}");     
+    }
+
+    public class PersonaViewModel
+    {
+        public int Dni { get; set; }
+        public string? Nombre { get; set; }
+    }
+}

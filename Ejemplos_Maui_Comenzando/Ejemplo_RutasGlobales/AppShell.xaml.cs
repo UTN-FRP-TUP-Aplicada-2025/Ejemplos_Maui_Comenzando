@@ -9,7 +9,7 @@ public partial class AppShell : Shell
         InitializeComponent();
 
         // Registrar rutas de navegación
-        Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
-        Routing.RegisterRoute(nameof(DetallePage), typeof(DetallePage));
+        Routing.RegisterRoute( nameof(MainPage), typeof(MainPage));
+        Routing.RegisterRoute( nameof(DetallePage), typeof(DetallePage));
     }
 }
