@@ -45,6 +45,11 @@
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
+  <Folder Name="/DataBase/">
+    <Project Path="Ejemplo_SQLite/Ejemplo_SQLite.csproj" Id="3fa36f3b-be3b-4165-aeaf-fd5894e8dcc8">
+      <Deploy Solution="Debug|*" />
+    </Project>
+  </Folder>
   <Folder Name="/Designing/">
     <Project Path="Ejemplo_Template/Ejemplo_Template.csproj" Id="ccf396c4-aa53-40b7-b264-3a2152f70192">
       <Deploy />
