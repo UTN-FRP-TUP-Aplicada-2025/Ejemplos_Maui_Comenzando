@@ -12,6 +12,7 @@
     <Project Path="Ejemplo_MiILogger/Ejemplo_MiILogger.csproj" Id="3e0102d1-8023-4fc2-91e0-cd8591ee13ed">
       <Deploy />
     </Project>
+    <Project Path="Ejemplo_Preferences/Ejemplo_Preferences.csproj" Id="ea7a1678-b861-455c-a7a6-248c323c1ce8" />
     <Project Path="Ejemplo_SDK_Versiones/Ejemplo_SDK_Versiones.csproj" Id="2272b1a5-8667-4773-b753-3c3f75145323">
       <Deploy Solution="Debug|*" />
     </Project>

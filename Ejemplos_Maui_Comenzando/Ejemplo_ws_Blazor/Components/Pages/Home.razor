@@ -28,18 +28,3 @@
     <button type="submit" class="btn btn-primary">Enviar</button>
 </EditForm>
 
-@code {
-    
-    private PersonaViewModel persona { get; set; } = new();
-
-    private void HandleSubmit()
-    {
-        Console.WriteLine($"Enviado: {persona.Nombre} con DNI: {persona.Dni}");     
-    }
-
-    public class PersonaViewModel
-    {
-        public int Dni { get; set; }
-        public string? Nombre { get; set; }
-    }
-}
