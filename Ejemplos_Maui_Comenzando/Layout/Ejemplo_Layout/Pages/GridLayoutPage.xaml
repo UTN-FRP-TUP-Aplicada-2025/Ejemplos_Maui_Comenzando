@@ -9,7 +9,7 @@
                  ColumnSpacing="10" RowSpacing="10" 
                  Margin="10">-->
 
-    <Grid ColumnSpacing="10" RowSpacing="10" Marging="10">
+    <Grid ColumnSpacing="10" RowSpacing="10" Margin="10">
 
         <Grid.RowDefinitions>
            <RowDefinition Height="*" />
