@@ -90,8 +90,6 @@ public partial class MainPage : ContentPage
 
     private void OnRefreshViewRefreshing(object sender, EventArgs e)
     {
-        
-
         if (!EnableRefreshing)
         {
             IsRefreshing = false;
@@ -106,4 +104,9 @@ public partial class MainPage : ContentPage
         IsRefreshing = true;
     }
 
+    private void OnPruebaURL(object sender, EventArgs e)
+    {
+        webView.Source = "https://geolocate.somee.com/geolocate?Latitud=-31.7496689&Longitud=-60.5213019&";
+    }
+    
 }

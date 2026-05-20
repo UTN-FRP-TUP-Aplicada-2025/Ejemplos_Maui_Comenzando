@@ -1,0 +1,28 @@
+﻿@page "/geolocate"
+
+@rendermode InteractiveServer
+@attribute [StreamRendering]
+
+<PageTitle>Home</PageTitle>
+
+<div>@contenido</div>
+
+
+@code{
+    //".../geolocate?Latitud=-31.7496689&Longitud=-60.5213019&"
+    [SupplyParameterFromQuery]
+    public double Latitud { get; set; }
+    [SupplyParameterFromQuery]
+    public double Longitud { get; set; }
+
+    string contenido { get; set; }
+
+    protected override Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            contenido = $"Latitud: {Latitud}, Longitud: {Longitud}";
+        }
+        return base.OnAfterRenderAsync(firstRender);        
+    }
+}

@@ -1,5 +1,6 @@
 <Solution>
-  <Folder Name="/AnatomiaProyecto/">
+  <Folder Name="/Ejemplos/" />
+  <Folder Name="/Ejemplos/AnatomiaProyecto/">
     <Project Path="AnatomiaProyecto/Ejemplo_CicloDeVida/Ejemplo_CicloDeVida.csproj" Id="6b77b1e0-b433-41ee-b2bb-cf5d4c09ea46">
       <Deploy />
     </Project>
@@ -20,14 +21,14 @@
       <Deploy />
     </Project>
   </Folder>
-  <Folder Name="/Apis/">
+  <Folder Name="/Ejemplos/Apis/">
     <Project Path="Apis/Ejemplo_ApiClient/Ejemplo_ApiClient.csproj" Id="6ac5b8a3-f5a2-49d7-99ce-85713e548667">
       <Deploy />
     </Project>
     <Project Path="Apis/Ejemplo_ApiServer/Ejemplo_ApiServer.csproj" Id="5184170c-e964-4130-a519-0f5ad029268f" />
   </Folder>
-  <Folder Name="/Binding/" />
-  <Folder Name="/Binding/BasicBinding/">
+  <Folder Name="/Ejemplos/Binding/" />
+  <Folder Name="/Ejemplos/Binding/BasicBinding/">
     <Project Path="Binding/Ejemplo_ConBinding/Ejemplo_ConBinding.csproj" Id="0aede578-d75a-4ae5-9394-b7492d876d16">
       <Deploy />
     </Project>
@@ -35,7 +36,7 @@
       <Deploy />
     </Project>
   </Folder>
-  <Folder Name="/Binding/DataBinding/">
+  <Folder Name="/Ejemplos/Binding/DataBinding/">
     <Project Path="Binding/Ejemplo_BasicDataBinding/Ejemplo_BasicDataBinding.csproj" Id="8a323236-8d75-4198-bf41-5a9c7d66abfc">
       <Deploy />
     </Project>
@@ -46,28 +47,28 @@
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
-  <Folder Name="/DataBase/">
+  <Folder Name="/Ejemplos/DataBase/">
     <Project Path="DataBase/Ejemplo_SQLite/Ejemplo_SQLite.csproj" Id="3fa36f3b-be3b-4165-aeaf-fd5894e8dcc8">
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
-  <Folder Name="/Designing/">
+  <Folder Name="/Ejemplos/Designing/">
     <Project Path="Designing/Ejemplo_Template/Ejemplo_Template.csproj" Id="ccf396c4-aa53-40b7-b264-3a2152f70192">
       <Deploy />
     </Project>
   </Folder>
-  <Folder Name="/Hibridas/">
+  <Folder Name="/Ejemplos/Hibridas/">
     <Project Path="Hibridas/Ejemplo_WebView/Ejemplo_WebView.csproj" Id="4fc8ba12-ef6c-4cfd-9f49-f9a3470ff579">
       <Deploy />
     </Project>
     <Project Path="Hibridas/Ejemplo_ws_Blazor/Ejemplo_ws_Blazor.csproj" Id="fcd02ad7-aaf5-4480-8962-8e9901340ca8" />
   </Folder>
-  <Folder Name="/Integracion/">
+  <Folder Name="/Ejemplos/Integracion/">
     <Project Path="Integracion/Ejemplo_DatosPersona/Ejemplo_DatosPersona.csproj" Id="63fb5de6-2f14-49d3-90e2-25e7a91ce27e">
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
-  <Folder Name="/Inyeccion/">
+  <Folder Name="/Ejemplos/Inyeccion/">
     <Project Path="Inyeccion/Ejemplo_Inyeccion/Ejemplo_Inyeccion.csproj" Id="ca0f2877-81b2-4b0f-9764-be9dc3ec9b80">
       <Deploy />
     </Project>
@@ -75,17 +76,17 @@
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
-  <Folder Name="/Layout/">
+  <Folder Name="/Ejemplos/Layout/">
     <Project Path="Layout/Ejemplo_Layout/Ejemplo_Layout.csproj" Id="11d5e223-8c7f-48bb-976d-4f81500a73fc">
       <Deploy />
     </Project>
   </Folder>
-  <Folder Name="/Layout/Docs/">
+  <Folder Name="/Ejemplos/Layout/Docs/">
     <File Path="Layout/Ejemplo_Docs_Layout/Readme.md" />
   </Folder>
-  <Folder Name="/NavegacionYPages/" />
-  <Folder Name="/NavegacionYPages/Parametros/" />
-  <Folder Name="/NavegacionYPages/Parametros/BackNavegation_Parametros/">
+  <Folder Name="/Ejemplos/NavegacionYPages/" />
+  <Folder Name="/Ejemplos/NavegacionYPages/Parametros/" />
+  <Folder Name="/Ejemplos/NavegacionYPages/Parametros/BackNavegation_Parametros/">
     <Project Path="NavegacionYPages/Ejemplo_PasoParametros_Callback/Ejemplo_PasoParametros_Callback.csproj" Id="1004a290-94d9-4f68-9f31-294625352f68">
       <Deploy Solution="Debug|*" />
     </Project>
@@ -96,18 +97,18 @@
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
-  <Folder Name="/NavegacionYPages/Parametros/ForwadNaveagtion_parametros/">
+  <Folder Name="/Ejemplos/NavegacionYPages/Parametros/ForwadNaveagtion_parametros/">
     <Project Path="NavegacionYPages/Ejemplo_QueryProperty/Ejemplo_QueryProperty.csproj" Id="3244d523-5a26-42f8-b3a5-16733a8600c5">
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
-  <Folder Name="/NavegacionYPages/TiposNavegacion/" />
-  <Folder Name="/NavegacionYPages/TiposNavegacion/NavigationPage_Jerarquica_modal/">
+  <Folder Name="/Ejemplos/NavegacionYPages/TiposNavegacion/" />
+  <Folder Name="/Ejemplos/NavegacionYPages/TiposNavegacion/NavigationPage_Jerarquica_modal/">
     <Project Path="NavegacionYPages/Ejemplo_NavigationPage/Ejemplo_NavigationPage.csproj" Id="11d00b6d-d342-4714-a619-6d7cf49d4d84">
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
-  <Folder Name="/NavegacionYPages/TiposNavegacion/Shell_multinivel/">
+  <Folder Name="/Ejemplos/NavegacionYPages/TiposNavegacion/Shell_multinivel/">
     <Project Path="NavegacionYPages/Ejemplo_Flyout/Ejemplo_Flyout.csproj" Id="c066ed90-c741-4f6d-bdc2-d087dc01ff61">
       <Deploy />
     </Project>
@@ -118,7 +119,7 @@
       <Deploy />
     </Project>
   </Folder>
-  <Folder Name="/Temas_c#/">
+  <Folder Name="/Ejemplos/Temas_c#/">
     <Project Path="Temas_c#/Ejemplo_ClaseParcial/Ejemplo_ClaseParcial.csproj" Id="f60fb776-7325-4a89-bff9-237dc8c52c1c">
       <Deploy Solution="Debug|*" />
     </Project>
@@ -133,14 +134,17 @@
       <Deploy Solution="Debug|*" />
     </Project>
   </Folder>
-  <Folder Name="/Temas_de_Estilos/">
+  <Folder Name="/Ejemplos/Temas_de_Estilos/">
     <Project Path="Temas_de_Estilos/Ejemplo_Fuentes_Iconos/Ejemplo_Fuentes_Iconos.csproj" Id="5aa241de-7b7a-4890-a742-ad622da6657a">
       <Deploy />
     </Project>
   </Folder>
-  <Folder Name="/Views/">
+  <Folder Name="/Ejemplos/Views/">
     <Project Path="Views/Ejemplo_Views/Ejemplo_Views.csproj">
       <Deploy />
     </Project>
+  </Folder>
+  <Folder Name="/github.workflow/">
+    <File Path="../.github/workflows/cd-ios-hibridas.Ejemplo_WebView.yml" />
   </Folder>
 </Solution>
