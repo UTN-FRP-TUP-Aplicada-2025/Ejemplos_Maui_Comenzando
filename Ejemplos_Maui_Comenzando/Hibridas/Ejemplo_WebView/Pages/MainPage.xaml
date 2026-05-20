@@ -8,6 +8,7 @@
         <HorizontalStackLayout  Grid.Row="0" >
             <Button Text="{Binding ButtonText}" Clicked="OnRefreshingClicked" Margin="10"/>
             <Button Text="Prueba" Clicked="OnPrueba" Margin="10"/>
+            <Button Text="Prueba URL" Clicked="OnPruebaURL" Margin="10"/>
         </HorizontalStackLayout>
 
 

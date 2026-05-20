@@ -67,19 +67,21 @@ public partial class MainPage : ContentPage
     {
         //invisibiliza al dialer
         IsRefreshing = false;
+
+        string url = e.Url;
+        bool containsGeo = url.Contains("geo=1", StringComparison.OrdinalIgnoreCase);
+
+        if (containsGeo)
+        {
+            e.Cancel = true;
+
+            webView.Source = url.Replace("geo=1", "Latitud=-31.7496689&Longitud=-60.5213019&");            
+        }
     }
 
     private void WebView_Navigated(object sender, WebNavigatedEventArgs e)
     {
     }
-
-    //protected override void OnAppearing()
-    //{
-
-    //    // muestra el dialer
-    //    // activa el refreshing
-        
-    //}
 
     protected override async void OnAppearing()
     {
@@ -106,7 +108,8 @@ public partial class MainPage : ContentPage
 
     private void OnPruebaURL(object sender, EventArgs e)
     {
-        webView.Source = "https://geolocate.somee.com/geolocate?Latitud=-31.7496689&Longitud=-60.5213019&";
+        //webView.Source = "https://geolocate.somee.com/geolocate?geo=1&Latitud=-31.7496689&Longitud=-60.5213019&";
+        webView.Source = "https://geolocate.somee.com/geolocate?geo=1";
     }
-    
+
 }
