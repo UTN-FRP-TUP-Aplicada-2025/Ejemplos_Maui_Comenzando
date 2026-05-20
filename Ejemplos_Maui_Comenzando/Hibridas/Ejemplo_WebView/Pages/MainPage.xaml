@@ -5,20 +5,15 @@
 
     <Grid RowDefinitions="Auto, *">
 
-        <Button Grid.Row="0" 
-                Text="{Binding ButtonText}" 
-                Clicked="OnRefreshingClicked"
-                Margin="10"/>
+        <HorizontalStackLayout  Grid.Row="0" >
+            <Button Text="{Binding ButtonText}" Clicked="OnRefreshingClicked" Margin="10"/>
+            <Button Text="Prueba" Clicked="OnPrueba" Margin="10"/>
+        </HorizontalStackLayout>
 
-        <RefreshView Grid.Row="1"
-                 x:Name="refreshView" 
-                 IsRefreshing="{Binding IsRefreshing}"  
-                 IsEnabled="True" 
-                 Refreshing="OnRefreshViewRefreshing">
 
-            <WebView x:Name="webView" 
-                 Navigating="WebView_Navigating" 
-                 Navigated="WebView_Navigated"/>
+        <RefreshView Grid.Row="1" x:Name="refreshView"  IsRefreshing="{Binding IsRefreshing}" IsEnabled="True"  Refreshing="OnRefreshViewRefreshing">
+
+            <WebView x:Name="webView" Navigating="WebView_Navigating" Navigated="WebView_Navigated"/>
             
         </RefreshView>
 
